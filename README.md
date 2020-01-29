@@ -10,7 +10,7 @@ Welcome to Advanced Creative Coding 1. In this course we look at a range of meth
 
 The course is divided in to 2-week blocks that focus on specific areas, exploring them in ways that relate to certain types of coding expertise and technical approaches. The course is 'Advanced' in terms of the concepts we will engage with, not necessarily the programming approaches that we will use. However, a basic background in programming is assumed. Those looking to refresh their memory of basic concepts can always take this Creative JavaScript crash course :
 
- - https://github.com/micknoise/Advanced-Creative-Coding-1/blob/master/Creative-JavaScript-Crash-Course.md
+ - https://github.com/ual-cci/Creative-JavaScript-Crash-Course
   
 
 ## Schedule:
