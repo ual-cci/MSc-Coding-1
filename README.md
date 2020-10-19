@@ -1,7 +1,5 @@
 # Coding One: Advanced Creative Coding
 
-## 2019-2020
-
 Professor Mick Grierson
 
 ## Introduction
