@@ -55,6 +55,7 @@ Waves also have an amplitude.
 - The sounds interfere with each other
   - Beating
   - Amplitude modulation
+  - Frequency modulation
 
 # Session #1 Homework
 
