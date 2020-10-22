@@ -56,12 +56,24 @@ Waves also have an amplitude.
   - Beating
   - Amplitude modulation
 
-# Session #1 Practical
+# Session #1 Homework
 
-Work through the first few examples.
+Make sure you're familiar with how the MIMIC platform works.
 
-Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed using procedural C++ audio.
+Make sure you have created an account on the MIMIC platform.
 
-Use two of the oscillators to control parameters of the other two oscillators. Try to use a filter.
+Make a fork of this documemt :
 
-Make the sound texture vary continuously over a period of 1 minute through the use of low-frequency oscillators, so that the sound texture develops over the entire period.
+https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
+
+- Use it as a basis for carrying out the following tasks:
+
+- Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed using procedural C++ audio.
+
+- Use two of the oscillators to control parameters of the other two oscillators.
+
+- Make the sound texture vary continuously over a period of 1 minute through the use of low-frequency oscillators, so that the sound texture develops over the entire period.
+
+Extra credit:
+
+- By researching documents on the MIMIC platform, try to work out how to use a filter.
