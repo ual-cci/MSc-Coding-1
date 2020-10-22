@@ -48,13 +48,6 @@ Shaders - Week 7 and 8
  - Modifying and lighting Geometry
  - Programming knowledge - GLSL concepts, variables and structure, contemporary graphics pipeline
 
-
-Basic Machine Learning and information retrieval for Real-time interaction
- - Sound and Image Features
- - Classification
- - Regression
-
-
 Assessment for this course is through practical and written examination
 
 ## How we will learn
