@@ -80,6 +80,8 @@ Waves also have an amplitude.
 - The higher the modulation index, the more sidebands are created, increasing the brightness of the sound
 - If the carrier and modulator are factors or multiples of each other, there is less beating (the sounds are harmonics of one another. If not, there is increased beating (the sounds are inharmonic) and eventually, noise (they become highly complex).
 - You can use this technique to do lots of things, including generating pseudo-random numbers.
+- John Chowning demonstrated that you could theoretically use this technique to simulate almost any sound with enough parameterised modulators.
+- https://ccrma.stanford.edu/people/john-chowning
 
 # Session #1 Homework
 
