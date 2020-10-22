@@ -70,12 +70,13 @@ Waves also have an amplitude.
 - The output is two signals whose frequencies are the sum and the difference of the two input frequencies
 - So if you multiply two sine waves together with frequencies of 400hz & 500hz, you will instead hear 900hz and 100hz
 
-## Frequency Modulation
+## Frequency Modulation 1
 - We can use the output of a sinewave oscillator to control the frequency of another
 - We do this by setting the frequency of the carrier oscillator, and adding the output of the second oscillator (the modulator) to it.
 - If we don't change the amplitude of the modulator, not much will happen, because it will simply be adding a value between 1 and -1
-- When we increase the amplitude of the modulator (i.e. change the 'modulation index'), this doesn't change the amplitude of the carrier - the sound output doesn't get louder.
-## Frequency Modulation can do lots of things for you 
+- When we increase the amplitude of the modulator (i.e. change the 'modulation index'), this doesn't change the amplitude of the carrier - the sound output doesn't get louder
+- Instead, the frequency of the sound changes in predictable, but nonetheless, very exciting ways
+## Frequency Modulation 2
 - If the frequency of the modulator is greater than the threshold of pitch perception (20 hz), increasing the modulation index makes the sound brighter
 - i.e. the frequency content of the signal increases in complexity as you increase the modulation index
 - The higher the modulation index, the more sidebands are created, increasing the brightness of the sound
