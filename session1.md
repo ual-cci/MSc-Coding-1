@@ -69,7 +69,7 @@ https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
 
 Use it as a basis for carrying out the following tasks:
 
-- Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed using procedural C++ audio.
+- Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed.
 
 - Use two of the oscillators to control parameters of the other two oscillators.
 
