@@ -11,18 +11,18 @@ The course is divided in to 2-week blocks that focus on specific areas, explorin
  - https://github.com/ual-cci/Creative-JavaScript-Crash-Course
   
 
-## Schedule:
+# Schedule:
 
 The schedule is a journey through different dimensions. We start in 1D, then progress to 2D, then 3D, and end up in ND.
 
-Sound and Signal processing - Week 1 and 2
+## Sound and Signal processing - Week 1 and 2
  - Looking at waveforms and making basic synths
  - Using filters and waveforms for altering sounds
  - Building a drum machine
  - Creating soundscapes
  - Programming knowledge - basic structure, variables, arrays and conditionals
 
-2D graphics - Week 3 and 4
+## 2D graphics - Week 3 and 4
 
  - Image representations
  - Image filters / convolution filters
@@ -30,7 +30,7 @@ Sound and Signal processing - Week 1 and 2
 Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Programming knowledge - intermediate structure,  more arrays, more conditionals, for loops, polar coordinates, 2D vectors
 
-3D graphics - Week 5 and 6
+## 3D graphics - Week 5 and 6
 
  - Creating a 3D engine from scratch
  - Creating 3D geometry from scratch
@@ -39,7 +39,7 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Programming knowledge - 3D vectors, creating perspective, using matrices for transformations
 
 
-Shaders - Week 7 and 8
+## Shaders - Week 7 and 8
 
  - Fragments shaders
  - Creating basic shapes, lines and noise
@@ -48,7 +48,9 @@ Shaders - Week 7 and 8
  - Modifying and lighting Geometry
  - Programming knowledge - GLSL concepts, variables and structure, contemporary graphics pipeline
 
-Assessment for this course is through practical and written examination
+## Final week - Assessment
+
+For this course, assessment is through practical project and written examination. The examination will happen during assessment week, which is the last scheduled week of the term.
 
 ## How we will learn
 
