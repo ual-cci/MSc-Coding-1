@@ -78,7 +78,7 @@ Waves also have an amplitude.
 - Instead, the frequency of the sound changes in predictable, but nonetheless, very exciting ways
 ## Frequency Modulation 2
 - If the frequency of the modulator is greater than the threshold of pitch perception (20 hz), increasing the modulation index makes the sound brighter
-- i.e. the frequency content of the signal increases in complexity as you increase the modulation index
+- **i.e. the frequency content of the signal increases in complexity as you increase the modulation index**
 - The higher the modulation index, the more sidebands are created, increasing the brightness of the sound
 - If the carrier and modulator are factors or multiples of each other, there is less beating (the sounds are harmonics of one another).
 - If not, there is increased beating (the sounds are inharmonic) and eventually, noise (they become highly complex).
