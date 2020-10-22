@@ -73,6 +73,10 @@ For this course, assessment is through practical project and written examination
 
 ## Getting started using JavaScript
 
+ - if you feel like you need an overall JavaScript refresher, check out the below crash course I've put together
+ - https://github.com/ual-cci/Creative-JavaScript-Crash-Course
+ - I'd recommend you do this before diving in to something like p5.
+
 - www.mimicproject.com _REQUIRES CHROME_
   - Start here for week 1 (using maximilian)
   - https://mimicproject.com/guides/maximJS
@@ -83,6 +87,3 @@ For this course, assessment is through practical project and written examination
   - And for ES6, which we will also be using:
   - https://www.w3schools.com/js/js_es6.asp
 
- - if you feel like you need an overall JavaScript refresher, check out the below crash course I've put together
- - https://github.com/micknoise/Advanced-Creative-Coding-1/blob/master/Creative-JavaScript-Crash-Course.md
- - I'd recommend you do this before diving in to something like p5.
