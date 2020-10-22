@@ -64,7 +64,7 @@ Waves also have an amplitude.
 - When you add sounds, they combine linearly and can create distortion
 - At maximum, `1+1=2` ...which will cause clipping
 
-## Adding sounds together
+## Combining sounds in different ways
 
 - When we add sounds together, strange things happen
 - The sounds interfere with each other
