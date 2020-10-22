@@ -75,10 +75,12 @@ Waves also have an amplitude.
 - We do this by setting the frequency of the carrier oscillator, and adding the output of the second oscillator (the modulator) to it.
 - If we don't change the amplitude of the modulator, not much will happen, because it will simply be adding a value between 1 and -1
 - When we increase the amplitude of the modulator (i.e. change the 'modulation index'), this doesn't change the amplitude of the carrier - the sound output doesn't get louder.
+## Frequency Modulation can do lots of things for you 
 - If the frequency of the modulator is greater than the threshold of pitch perception (20 hz), increasing the modulation index makes the sound brighter
 - i.e. the frequency content of the signal increases in complexity as you increase the modulation index
 - The higher the modulation index, the more sidebands are created, increasing the brightness of the sound
-- If the carrier and modulator are factors or multiples of each other, there is less beating (the sounds are harmonics of one another. If not, there is increased beating (the sounds are inharmonic) and eventually, noise (they become highly complex).
+- If the carrier and modulator are factors or multiples of each other, there is less beating (the sounds are harmonics of one another).
+- If not, there is increased beating (the sounds are inharmonic) and eventually, noise (they become highly complex).
 - You can use this technique to do lots of things, including generating pseudo-random numbers.
 - John Chowning demonstrated that you could theoretically use this technique to simulate almost any sound with enough parameterised modulators.
 - https://ccrma.stanford.edu/people/john-chowning
