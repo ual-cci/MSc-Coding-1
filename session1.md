@@ -49,7 +49,9 @@ Waves also have an amplitude.
 
 - This is how much they move up and down.
 - In the real world, this is how much air they are moving.
-- In the computer, we have a different situation.
+- The speaker reproduces this process based on the computer's representation
+- Remember, when the amplitude value of the wave is over 1 or below -1, you're in distortion
+- In the computer, we have a different situation in that it can be more, and we can clip on purpose, for example to change the nature of the wave.
 
 ## Amplitude 2
 
