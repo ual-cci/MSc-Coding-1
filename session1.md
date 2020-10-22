@@ -4,7 +4,7 @@
 
 - Fundamental basis of all periodic phenomena
 - Not just useful for sounds, but also images
-- `$sin(x)$` function creates a sine wave
+- `sin(x)` function creates a sine wave
 - This is a wave, or waveform
 - `maxiOsc` object
 
@@ -19,8 +19,8 @@ _The position of the speaker is the PHASE of the wave._
 
 Waves don’t just have a phase. They also have _frequency_
 
-- how often they move up and down each second
-- waves that oscillate more than around 20 times per second take on a quality of continuos sounds, and not separate pulses
+- This is how often they move up and down each second - measured in hertz (hz) (also called 'Cycles Per Second (cps)').
+- Waves that oscillate more than around 20 times per second take on a quality of continuos sounds, and not separate pulses
 - Interestingly, the same is roughly true for images (fps)
 - Oscillations below 20hz are called “Low Frequency” (LFOs)
 
@@ -29,7 +29,7 @@ Waves don’t just have a phase. They also have _frequency_
 ## All about time
 
 - Both sound and video are time based
-- Interesting fusion occurs around 20 Hz
+- Interesting fusion occurs around 20Hz
 - Getting things to happen at the right time is an important computational problem
 
 --
@@ -46,16 +46,40 @@ Waves also have an amplitude.
 - In the computer, the audio output should vary between -1 and 1
 - This is a linear measurement, not in dB - i.e. not logarithmic
 - When you add sounds, they combine linearly and can create distortion
-- `$1+1=2$` ...not so great for your speakers. But sounds nice.
-
+- At maximum, `1+1=2` ...which will cause clipping
 
 ## Adding sounds together
 
 - When we add sounds together, strange things happen
 - The sounds interfere with each other
   - Beating
-  - Amplitude modulation
-  - Frequency modulation
+  - Amplitude modulation - (multiplication)
+  - Frequency modulation - (controlling frequency with another oscillator)
+  
+## Beating
+- When two sinewave oscillators of different frequencies are added together, they interact to alter the amplitude
+- This is because they cycle across each other. Sometimes, one will be at -1, while the other is at 1
+- So the result becomes 0 at these points
+- What you hear is the sound fading in and out.
+- We call this 'beating'
+- The beat frequency (how often it fades in and out) is equal to the difference between the two input frequencies.
+  
+## Amplitude Modulation
+
+- A common example of amplitude modulation (AM) is when we multiply two sinusoidal oscillators together
+- The output is two signals whose frequencies are the sum and the difference of the two input frequencies
+- So if you multiply two sine waves together with frequencies of 400hz & 500hz, you will instead hear 900hz and 100hz
+
+## Frequency Modulation
+- We can use the output of a sinewave oscillator to control the frequency of another
+- We do this by setting the frequency of the carrier oscillator, and adding the output of the second oscillator (the modulator) to it.
+- If we don't change the amplitude of the modulator, not much will happen, because it will simply be adding a value between 1 and -1
+- When we increase the amplitude of the modulator (i.e. change the 'modulation index'), this doesn't change the amplitude of the carrier - the sound output doesn't get louder.
+- If the frequency of the modulator is greater than the threshold of pitch perception (20 hz), increasing the modulation index makes the sound brighter
+- i.e. the frequency content of the signal increases in complexity as you increase the modulation index
+- The higher the modulation index, the more sidebands are created, increasing the brightness of the sound
+- If the carrier and modulator are factors or multiples of each other, there is reduced beating. If not, there is increased beating and eventually, noise.
+- You can use this technique to do lots of things, including generating pseudo-random numbers.
 
 # Session #1 Homework
 
