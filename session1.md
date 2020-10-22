@@ -61,6 +61,8 @@ Waves also have an amplitude.
 
 - In the computer, the audio output should vary between -1 and 1
 - This is a linear measurement, not in dB - i.e. not logarithmic
+- `dB = Math.log10(linear_volume)*10`, which means linear val 1 == 0dB, 0.5 = -3.010. It's times 10 because a deciBel is a tenth of a Bel.
+- Let me know if you want me to bore your pants off about this.
 - When you add sounds, they combine linearly and can create distortion
 - At maximum, `1+1=2` ...which will cause clipping
 
