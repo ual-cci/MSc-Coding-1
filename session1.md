@@ -85,6 +85,7 @@ Waves also have an amplitude.
 - You can use this technique to do lots of things, including generating pseudo-random numbers.
 - John Chowning demonstrated that you could theoretically use this technique to simulate almost any sound with enough parameterised modulators.
 - https://ccrma.stanford.edu/people/john-chowning
+- https://ccrma.stanford.edu/sites/default/files/user/jc/fm_synthesispaper-2.pdf
 
 # Session #1 Homework
 
