@@ -22,7 +22,7 @@ The schedule is a journey through different dimensions. We start in 1D, then pro
  - Creating soundscapes
  - Programming knowledge - basic structure, variables, arrays and conditionals
 
-## 2D graphics - Week 3 and 4
+## 2D graphics - Week 3 and 4
 
  - Image representations
  - Image filters / convolution filters
