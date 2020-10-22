@@ -111,7 +111,11 @@ Make sure you're familiar with how the MIMIC platform works.
 
 Make sure you have created an account on the MIMIC platform.
 
-Make a fork of this documemt :
+Make a fork of this document if you want the simplest possible starting example :
+
+https://mimicproject.com/code/8e5728dd-2eb9-02a9-9cb8-63d3731bba68
+
+Or if you want to use the visualisation, use this one.
 
 https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
 
