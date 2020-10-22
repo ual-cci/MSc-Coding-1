@@ -12,6 +12,8 @@
 
 - Wave goes above 0. --> Speaker moves forward
 - Wave goes below 0. --> Speaker moves backward
+- when the value of the wave is over 1 or below -1, you're in distortion
+- i.e. the speaker can't move any further, so the waveform is clipped.
 
 _The position of the speaker is the PHASE of the wave._
 
