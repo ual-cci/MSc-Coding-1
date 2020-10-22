@@ -15,6 +15,12 @@
 
 _The position of the speaker is the PHASE of the wave._
 
+## All about time
+
+- Both sound and video are time based
+- Interesting fusion occurs around 20Hz
+- Getting things to happen at the right time is an important computational problem
+
 ## Frequency
 
 Waves don’t just have a phase. They also have _frequency_
@@ -24,15 +30,17 @@ Waves don’t just have a phase. They also have _frequency_
 - Interestingly, the same is roughly true for images (fps)
 - Oscillations below 20hz are called “Low Frequency” (LFOs)
 
---
+## Frequency 2
 
-## All about time
+- It's generally considered that humans can't hear oscillations with freqencies over 20000hz (20KHz)
+- This very often changes with age, reducing as hearing definition decreases (as hair cells in the Cochlea cease to function).
+- It order to digitally represent any periodic oscillation, we need to take **at least** two measurements, or 'samples' (one for each peak phase position).
+- This is why your digital audio system is considered most effective if it has a samplerate of at least twice the maximum frequency you can hear (e.g. 44100hz, 48000hz etc.)
+- The samplerate is the number of times per second that your system can measure (record) or reproduce (play back) the amplitude value of a signal
+- The maximum frequency your system can reproduce is half the samplerate, called the _Nyquist Frequency_. The samplerate is also equal to the _Nyquist Rate_, which everybody finds confusing.
+- Remember - **the rate is twice the frequency**, even when it's the Nyquist rate. But the rate is **never** the Nyquist Frequency
+- You should probably check the samplerate of your audio hardware when programming audio systems, and make sure you at least know what it is. It will cause you problems if you forget that it exists.
 
-- Both sound and video are time based
-- Interesting fusion occurs around 20Hz
-- Getting things to happen at the right time is an important computational problem
-
---
 ## Amplitude
 
 Waves also have an amplitude.
@@ -40,6 +48,14 @@ Waves also have an amplitude.
 - This is how much they move up and down.
 - In the real world, this is how much air they are moving.
 - In the computer, we have a different situation.
+
+## Amplitude 2
+
+- When we take a measurement of an oscillation (a sample), we store the value of the sample using a number of bits.
+- 8 bit gives you a potential 256 values to represent the amplitude. This isn't great (although I like it).
+- Most people agree that 16 bits per sample is fine. This gives you 65,536 numbers with which to encode a floating point value between 1 and -1.
+- Many modern audio systems have much higher bitrates and sample rates.
+- Reducing the bitrate is lots of fun and you should try it. You can use quantisation for this which is pretty simple to do by accident.
 
 ## Adding sounds together
 
@@ -108,3 +124,5 @@ Use it as a basis for carrying out the following tasks:
 Extra credit:
 
 - By researching documents on the MIMIC platform, try to work out how to use a filter.
+- Read this useful article from izotope on bit resolution and sampling rate
+- https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
