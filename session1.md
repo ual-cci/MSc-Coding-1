@@ -131,8 +131,7 @@ Use either as a basis for carrying out the following tasks:
 
 - Make the sound texture vary continuously over a period of 1 minute through the use of low-frequency oscillators, so that the sound texture develops over the entire period.
 
-Extra credit:
-
-- By researching documents on the MIMIC platform, try to work out how to use a filter.
+Further reading:
+- Follow Chris Kiefer's tutorial on the Mimic platform: https://mimicproject.com/guides/maximJS
 - Read this useful article from izotope on bit resolution and sampling rate
-- https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
+-- https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
