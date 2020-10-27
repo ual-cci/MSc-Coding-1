@@ -85,7 +85,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - You can do this by subtracting the desired position (where you want to read a value from given your playback speed, e.g. [1.5]) from the nearest prior position (which would be 1 in this case).
 - Like this : `remainder = position - Math.floor(position);`
 - You can then calculate the imaginary amplitude value at that imaginary position as follows:
-- `amplitude = ((1-remainder) * amplitudes[a] + remainder * amplitudes[b]);`, which is lots better than the first solution I introduced.
+- `amplitude = ((1-remainder) * amplitudes[a] + remainder * amplitudes[b]);`, which is more or less the same as the above.
 - An even better interpolation algirithm is to use cubic interpolation, which augments the above by calculating a curve between the two points by using two more points to help define the slope. So you get the sample before the closest point (a), the closest point (b), and two of the upcoming points (c and d).
 - There are many different cubic interpolation algorithms, and they all sound different, despite the mathematical differences being potentially not very large - this is just the nature of audio, as the ear can be very sensitive. This one is the best you will find in my opinion:
 
