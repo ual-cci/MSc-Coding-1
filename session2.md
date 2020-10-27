@@ -86,15 +86,13 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - Like this : `remainder = position - Math.floor(position);`
 - You can then calculate the imaginary amplitude value at that imaginary position as follows:
 - `amplitude = ((1-remainder) * amplitudes[a] + remainder * amplitudes[b]);`, which is more or less the same as the above.
-- An even better interpolation algirithm is to use cubic interpolation, which augments the above by calculating a curve between the two points by using two more points to help define the slope. So you get the sample before the closest point (a), the closest point (b), and two of the upcoming points (c and d).
-- There are many different cubic interpolation algorithms, and they all sound different, despite the mathematical differences being potentially not very large - this is just the nature of audio, as the ear can be very sensitive. This one is the best you will find in my opinion:
+- An even better interpolation algirithm is to use cubic interpolation, which augments the above by calculating a curve between the two points by using two more points to help define the slope. So you get the sample before the closest point (a), the closest point (b), and two of the upcoming points (c and d), and process them using a series of constants that define the nature of the slope.
+- There are many different cubic interpolation algorithms, and they don't all sound the same, despite the mathematical differences being not very large - this is just the nature of audio, as the ear can be very sensitive. This one is the **best sounding** cubic interpolation algorithms you will find in my opinion:
 
-`a1 = 0.5f * (c - a);`
-`a2 = a - 2.5 * b + 2.f * c - 0.5f * d;`
-`a3 = 0.5f * (d - a) + 1.5f * (b - c);`
-`output = (((a3 * remainder + a2) * remainder + a1) * remainder + b);`
-
-This is probably overkill unless you're working in the music industry.
+`a1 = 0.5f * (c - a);
+a2 = a - 2.5 * b + 2.f * c - 0.5f * d;
+a3 = 0.5f * (d - a) + 1.5f * (b - c);
+output = (((a3 * remainder + a2) * remainder + a1) * remainder + b);`
 
 ## How to Load a Sample
 - Loading and playing back a sample is super easy using MIMIC
