@@ -77,7 +77,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - There are many different kinds of interpolation used in audio
 - The most common type of interpolation is called *Linear Interpolation*
 - This attempts to plot a straight line between two points, and identify how far along that line you need to be.
-- So for example, if array value 1 a has a value of 0.5, and value 2 has a value of 1.0, and you are trying to find a value halfway between these (let's call this the remainder), you could use the below algorithm:
+- So for example, if array value 1 (point a) has a value of 0.5, and array value 2 (point b) has a value of 1.0, and you are trying to find a value halfway between these (let's call this the remainder, and it's halfway so we can say this is 0.5), you could use the below algorithm:
 - `a + ((b - a) * remainder))`
 - Basically, take a, and add on half the difference between b and a.
 - This works for most things, but generates noise in the high frequency signal components, as it is literally drawing a straight line between two points where there should instead be a curve. 
