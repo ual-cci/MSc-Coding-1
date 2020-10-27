@@ -91,11 +91,22 @@ This is because you're smoothing the signal and the peak values are therefore be
 
 - I tried connecting the mean output of the sound to the parameter of my graphics system, but it's giving me a continuous signal. How can I trigger something absed on this instead of just using the value?
 
-You can use a conditional to check if the value goes over a certain amount, and then use this to trigger something. This bit of code is probably a good starting point (you would of course need to define these variables yourself) : `if (RMS_Output > 0.5) {myImageTrigger = True;} else {myImageTrigger = False;}`
+You can use a conditional to check if the value goes over a certain amount, and then use this to trigger something. This bit of code is probably a good starting point (you would of course need to define these variables yourself) :
+
+`if (RMS_Output > 0.5) {myImageTrigger = True;} else {myImageTrigger = False;}`
 
 - I've got a conditional set up that is setting a boolean value to True whenever the RMS output is over a threshold value (e.g. 0.5). But the problem is, it stays true and then keeps triggering over and over again for the entire length of time that the conditional statement stays true. How can I get it to trigger once, and then not trigger again?
 
-There are about 1000 ways to do this but the easiest method is to have a countdown which locks the conditional in a False state for a short time after it's first been triggered. Something like `if (RMS_Output > 0.5 && reTrigCounter < 0) {myImageTrigger = True;reTrigCounter+=someValue;//add some value to the reTrigCounter so it's above zero and won't trigger again next time.} else {myImageTrigger = False; reTrigCounter--//subtract one until you get to zero and you can trigger again}`
+There are about 1000 ways to do this but the easiest method is to have a countdown which locks the conditional in a False state for a short time after it's first been triggered. Something like
+
+`if (RMS_Output > 0.5 && reTrigCounter < 0) {
+ myImageTrigger = True;
+ reTrigCounter+=someValue;//add some value to the reTrigCounter so it's above zero and won't trigger again next time.
+}
+else {
+ myImageTrigger = False;
+ reTrigCounter--//subtract one until you get to zero and you can trigger again
+}`
 
 But TBH this is not the best method. It's just the easiest to do if you've not done it before. A better method is to get the mean output of the last n spectral flux values and build an adaptive threshold using standard deviation. If this topic is of interest to you in general, I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll 
 
