@@ -1,10 +1,10 @@
 # Session 2: Sound Part Two
 
-## Recap
+## Recap of Last Session
 ### Properties of Periodic Waves
 
 ![Wikimedia Commons Graph of a Sine Wave](https://upload.wikimedia.org/wikipedia/commons/1/12/Figure-sine-graph-winston.png)
- - We learned about basic periodic signals (sine, cosine)
+ - Last session, we learned about basic periodic signals (sine, cosine)
  - We learned that they have **Phase, Frequency and Amplitude**
  
  - **Phase** (what point the wave is in its periodic cycle). This is often measured in degrees (`0-360`) or radians (`0 - 2*PI`), or also by a point in time if the frequency is known. With a sine waveform, 0 degrees is the start, 90 degrees is the postive peak, 180 degrees is when it returns to the centre line, 270 degrees is the negative peak, and 360 degrees is the start of the next cycle. When we reach 360 (`2*PI`), we can either begin from 0 again (i.e., we can 'wrap' the phase so it's always between 0 and 360), or we can continue to increase the phase. **Mathematical functions for creating waves generally take inputs in radians**. Therefore, a waveform's phase at any time can be described by its position in time (as in the above diagram), or in radians / degrees, or by its real value.
