@@ -56,7 +56,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 
 - If you run all these values through a speaker at a rate which is the same as the rate they were recorded, you get a pretty good reproduction of the sound they represent. If you run the values through a speaker at a higher rate, the sound is faster and higher pitched, and if you do it more slowly, the sound is slower and lower pitched (there are some problems that occur when you do this that I'm going to talk about later)
 - If you graphed one of these lists of numbers (e.g. just plotted them) you would see the entire waveform for that sound
-- Feel free to do this in excel. You'll possibly need to copy and paste the values in to a text file, and then import it as comma separated values (.csv), making sure to select the commas as the delimiters, which should actually be obvious to excel, but it isn't for reasons nobody but I care about.
+- Feel free to do this in excel. You'll possibly need to copy and paste the values in to a text file, and then import it as comma separated values (.csv), making sure to select the commas as the delimiters, which should actually be obvious to excel, but it isn't unfortunately so watch out for that.
 - As we've already discussed, all sounds can be seen as a collection of sinusoidal waves added together. When they are added, they become a single waveform with lots of different frequencies interacting in complex ways.
 - This isn't something you can just understand immediately. It takes time. But you should probably spend some time thinking very hard about it.
 
