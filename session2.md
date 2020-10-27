@@ -95,10 +95,9 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
  - So if your maxiClock object is called 'myClock', you need this in 'play':
  `myClock.ticker();`
  - You can then run a test with a conditional to see if there's a clock tick happening, and if there is, make something happen.
- `if( myClock.tick ) {
- mySample.trigger();
  
- }`
+ `if( myClock.tick ) { mySample.trigger();}`
+ 
  - You can also check to see where the maxiClock playHead is. You can then make things happen if the playHead is before, at or after a certain point:
  
  `if( myClock.tick && myClock.playHead>=100){       
