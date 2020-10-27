@@ -36,7 +36,11 @@
 
 ## Homework Review
  - Lets review the homework :-) 
- - Then we're going to have a question and answer session about the example code you were given just to go over the basics.
+ - Then we're going to have a question and answer session about the example code you were given just to go over the basics
+ - As promised, we're also going to look at some spectral plots so we can examine the way the signals interact in more detail:
+ 
+ Lets do this now:
+ <iframe src="https://mimicproject.com/code/b6a1bbfa-5992-4e14-3814-0197d5984028" width="500" height="300"></iframe>
  
 # Session 2: SAMPLES!
  - We're going to explore how to load samples and manipulate them
