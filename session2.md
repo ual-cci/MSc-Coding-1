@@ -28,7 +28,7 @@
  - We tried to use basic waveforms to create a range of sounds that continually changed
  - We got a taste of the approach we need to do these things in JavaScript
  - We used variables, objects and basic functions. We also used basic operators (+, -, *, /)
- - Some of you might have come across some additional math objects (abs, exp, sin, cos). I definitely used one of these if you were paying attention.
+ - Some of you might have come across some additional math objects (abs, exp, sin, cos). I definitely used one of these which you will have seen if you were paying close attention.
  
  **Homework From Last Session**
  
