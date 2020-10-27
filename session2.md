@@ -50,15 +50,17 @@ https://mimicproject.com/code/b6a1bbfa-5992-4e14-3814-0197d5984028
  - We'll also be getting more familiar with using % (modulo)
 
 ## What is a sample?
-- Last week we used the term 'sample' to describe an individual value, or number, between -1 and 1, where the individual value (the *sample*) was usually stored in at least 16 bits. When you string these together, you get sound. These don't have to be simple sine waves. They can be any sound. Here's an example of a json array with some drum sounds in it.
+- Last week we used the term 'sample' to describe an individual value, or number, between -1 and 1, where the individual value (the *sample*) was usually stored in at least 16 bits. When you string these together, you get sound. These don't have to be simple sine waves. They can be any sound. Here's an example of some JavaScript arrays with sounds in them. These are 16 bit floating point values between -1. and 1., recorded 44,100 times per second.
 
 https://www.doc.gold.ac.uk/~mus02mg/samples.js
 
+- If you run all these values through a speaker at a rate which is the same as the rate they were recorded, you get a pretty good reproduction of the sound they represent. If you run the values through a speaker at a higher rate, the sound is faster and higher pitched, and if you do it more slowly, the sound is slower and lower pitched (there are some problems that occur when you do this that I'm going to talk about later)
 - If you graphed one of these lists of numbers (e.g. just plotted them) you would see the entire waveform for that sound
 - Feel free to do this in excel. You'll possibly need to copy and paste the values in to a text file, and then import it as comma separated values (.csv), making sure to select the commas as the delimiters, which should actually be obvious to excel, but it isn't for reasons nobody but I care about.
 - As we've already discussed, all sounds can be seen as a collection of sinusoidal waves added together. When they are added, they become a single waveform with lots of different frequencies interacting in complex ways.
 - This isn't something you can just understand immediately. It takes time. But you should probably spend some time thinking very hard about it.
 
+- In any case, it's quite common for people to describe a selection of recorded samples 
  
  ## Example code for this session:
   - This basic drum machine example has everything you need in it
@@ -72,6 +74,38 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 # Exercise for this week
  - Create a soundscape or rhythmic piece that uses at least four sounds, and continually changes for over 2 minutes. 
 
-# Additional Materials
- - Here's an advanced example that combines all the things we looked at in the last two weeks, as well as some other stuff
+# Advanced Example
+ - Here's an advanced example that combines all the things we looked at in the last two weeks, as well as some other stuff including pattern generation, multiple voices, and fully implemented subtractive synthesiser examples.
  - https://mimicproject.com/code/afe3b617-4ad9-97df-6c8c-818b901897eb
+
+# FAQ
+## These are some common questions I often get asked by beginners once they get to this stage. I'm leaving them here in case they are useful
+
+- How can I make something happen visually based on a sound
+
+For this you need to do some form of analysis of the sound output. The first method you should probably try is to get the average of a block of samples. This super easy using the very first example I showed you, as I'm collecting blocks of samples (the sample buffer) which gives us a list 1024 numbers around 100 times a second. You can calculate the mean, and then use this to make something happen.
+
+- I'm calculating the mean of each sample buffer and this is working OK, but sometimes it seems not to capture the intensity of the signal very well.
+
+This is because you're smoothing the signal and the peak values are therefore being flattened. You could calculate a better measure by getting the square of each of these 1024 values, getting the mean of all of these squares, and then calculating the square root of that mean. This gives you the **Root Mean Square** output, or **RMS**.
+
+- I tried connecting the mean output of the sound to the parameter of my graphics system, but it's giving me a continuous signal. How can I trigger something absed on this instead of just using the value?
+
+You can use a conditional to check if the value goes over a certain amount, and then use this to trigger something. This bit of code is probably a good starting point (you would of course need to define these variables yourself) : `if (RMS_Output > 0.5) {myImageTrigger = True;} else {myImageTrigger = False;}`
+
+- I've got a conditional set up that is setting a boolean value to True whenever the RMS output is over a threshold value (e.g. 0.5). But the problem is, it stays true and then keeps triggering over and over again for the entire length of time that the conditional statement stays true. How can I get it to trigger once, and then not trigger again?
+
+There are about 1000 ways to do this but the easiest method is to have a countdown which locks the conditional in a False state for a short time after it's first been triggered. Something like `if (RMS_Output > 0.5 && reTrigCounter < 0) {myImageTrigger = True;reTrigCounter+=someValue;//add some value to the reTrigCounter so it's above zero and won't trigger again next time.} else {myImageTrigger = False; reTrigCounter--//subtract one until you get to zero and you can trigger again}`
+
+But TBH this is not the best method. It's just the easiest to do if you've not done it before. A better method is to get the mean output of the last n spectral flux values and build an adaptive threshold using standard deviation. If this topic is of interest to you in general, I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll 
+
+- How can I control the sound with my body?
+
+You could use one of Louis' great tutorials to learn how to do this with your webcam.
+https://mimicproject.com/code/90def343-a896-31d4-d818-20d89b9bc631
+
+- How can I make more music using machine learning approaches?
+
+More great examples on how to do this !
+
+https://mimicproject.com/guides/learner
