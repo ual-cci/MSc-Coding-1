@@ -60,7 +60,40 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - As we've already discussed, all sounds can be seen as a collection of sinusoidal waves added together. When they are added, they become a single waveform with lots of different frequencies interacting in complex ways.
 - This isn't something you can just understand immediately. It takes time. But you should probably spend some time thinking very hard about it.
 
-- **In any case, it's quite common for people to describe a selection of recorded samples as a 'sample'**
+- **In any case, it's quite common for people to describe a selection of recorded samples as a 'sample', as well as to describe an individual amplitude value within a sample as a 'sample'. Both uses are correct**
+
+## Manipulating samples by changing their playback rate, order, and position
+- Once you have samples loaded in to memory, you can manipulate them just like any other list of numbers
+- Two common operations people often want to do are: speeding up the playback rate, and slowing down the playback rate
+- You can easily double the speed of playback by only playing back every other amplitude value in the list 
+- You can also halve the speed of playback by playing every amplitude value twice.
+- But how would you play back the sample at 3/4 (75%) speed? To do this you would need to be able to read an array value somewhere between two of the actual array values you have - like this `mySampleArray[1.5];`. This is not possible, as each array index needs to be an integer - an actual index in the list!!
+- (you could just use the nearest actual value but this sounds pretty bad)
+- A better idea is to work out where you think the amplitude would be at that point in the array if it did exist - e.g. somewhere between two actual values - using **interpolation**.
+
+## Interpolation
+- Interpolation means 'estimating a new data point based on known data'
+- There are many different kinds of interpolation used in audio
+- The most common type of interpolation is called *Linear Interpolation*
+- This attempts to plot a straight line between two points, and identify how far along that line you need to be.
+- So for example, if array value 1 a has a value of 0.5, and value 2 has a value of 1.0, and you are trying to find a value halfway between these (let's call this the remainder), you could use the below algorithm:
+- `a + ((b - a) * remainder))`
+- Basically, take a, and add on half the difference between b and a.
+- This works for most things, but generates noise in the high frequency signal components, as it is literally drawing a straight line between two points where there should instead be a curve. 
+- Also, in real situations, you need to calculate the remainder on the fly - it won't simply be halfway, and will depend on the playback speed.
+- You can do this by subtracting the desired position (where you want to read a value from given your playback speed, e.g. [1.5]) from the nearest prior position (which would be 1 in this case).
+- Like this : `remainder = position - Math.floor(position);`
+- You can then calculate the imaginary amplitude value at that imaginary position as follows:
+- `amplitude = ((1-remainder) * amplitudes[a] + remainder * amplitudes[b]);`, which is lots better than the first solution I introduced.
+- An even better interpolation algirithm is to use cubic interpolation, which augments the above by calculating a curve between the two points by using two more points to help define the slope. So you get the sample before the closest point (a), the closest point (b), and two of the upcoming points (c and d).
+- There are many different cubic interpolation algorithms, and they all sound different, despite the mathematical differences being potentially not very large - this is just the nature of audio, as the ear can be very sensitive. This one is the best you will find in my opinion:
+
+`a1 = 0.5f * (c - a);`
+`a2 = a - 2.5 * b + 2.f * c - 0.5f * d;`
+`a3 = 0.5f * (d - a) + 1.5f * (b - c);`
+`output = (((a3 * remainder + a2) * remainder + a1) * remainder + b);`
+
+This is probably overkill unless you're working in the music industry.
 
 ## How to Load a Sample
 - Loading and playing back a sample is super easy using MIMIC
@@ -111,9 +144,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
   - https://mimicproject.com/code/9538f995-f184-8a64-967c-f5de93e58076
   - Here is a more developed example with the play-button code in it, and a more complex output:
   - https://mimicproject.com/code/86a2fefb-4314-16dc-a7d5-fd930bd481d0
-  
-  
-  
+
 
 # Exercise for this week
  - Create a soundscape or rhythmic piece that uses at least four sounds, and continually changes for over 2 minutes. 
