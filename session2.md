@@ -2,13 +2,15 @@
 
 ## Recap
 ### Properties of Periodic Waves
+
+![Wikimedia Commons Graph of a Sine Wave] (https://upload.wikimedia.org/wikipedia/commons/1/12/Figure-sine-graph-winston.png)
  - We learned about basic periodic signals (sine, cosine)
  - We learned that they have **Phase, Frequency and Amplitude**
  
- - **Phase** (what point the wave is in its periodic cycle). This is often measured in degrees (`0-360`) or radians (`0 - 2*PI`). With a sinusoidal waveform, 0 degrees is the start, 90 degrees is the postive peak, 180 degrees is when it returns to the centre line, 270 degrees is the negative peak, and 360 degrees is the start of the next cycle. When we reach 360 (`2*PI`), we can either begin measuring from 0 again (i.e., we can 'wrap' the phase so it's always between 0 and 360), or we can continue to increase the phase. **Mathematical functions for creating waves generally take inputs in radians**
+ - **Phase** (what point the wave is in its periodic cycle). This is often measured in degrees (`0-360`) or radians (`0 - 2*PI`), or also by a point in time if the frequency is known. With a sinusoidal waveform, 0 degrees is the start, 90 degrees is the postive peak, 180 degrees is when it returns to the centre line, 270 degrees is the negative peak, and 360 degrees is the start of the next cycle. When we reach 360 (`2*PI`), we can either begin from 0 again (i.e., we can 'wrap' the phase so it's always between 0 and 360), or we can continue to increase the phase. **Mathematical functions for creating waves generally take inputs in radians**. Therefore, a waveforms phase at any time can be described by its position in time, or in radians / degrees, or by its real value.
  
- - **Frequency** (how often they repeat their cycles). This is measured in Hertz (Hz), or CPS (cycles per second).
- - **Amplitude** (the *absolute peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**), with a *node* inbetween at infinity (when it is at zero). By absolute, we mean with the sign removed, so -1 in that case can be thought of as 1 in absolute terms, despite needing to be considered as -1 for the purposes of representing the phase of the signal either side of 0.
+ - **Frequency** (how often they repeat their cycles). This is measured in Hertz (Hz), or CPS (cycles per second). Some people find this is a lot easier to think about than phase.
+ - **Amplitude** (the *absolute peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**), with a *node* when it *crosses zero*. By *absolute*, we mean with the sign removed, so -1 in that case can be thought of as 1 in absolute terms, despite needing to be considered as -1 for the purposes of representing the phase of the signal either side of 0.
  - *Both Amplitude and Frequency relate to Phase*
  - Amplitude is the highest value the signal can produce (at its peak - remember, it's an oscillation through positive and negative phase!)   
  - Frequency is how often the complete phase cycle repeats every second
@@ -28,12 +30,12 @@
  - We used variables, objects and basic functions. We also used basic operators (+, -, *, /)
  - Some of you might have come across some additional math objects (abs, exp, sin, cos). I definitely used one of these if you were paying attention.
  
- **Finally**
+ **Homework From Last Session**
  
  I asked you to make a sound composition by forking a document, creating some new oscillator objects (maxiOsc objects), and using them to control other maxiOsc objects :-)
 
-## Reviewing the Homework
- - Lets review the work that you have done in the last week. 
+## Homework Review
+ - Lets review the homework :-) 
  - Then we're going to have a question and answer session about the example code you were given just to go over the basics.
  
 # Session 2: SAMPLES!
