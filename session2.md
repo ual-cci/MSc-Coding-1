@@ -3,7 +3,7 @@
 ## Recap
 ### Properties of Periodic Waves
 
-![Wikimedia Commons Graph of a Sine Wave] (https://upload.wikimedia.org/wikipedia/commons/1/12/Figure-sine-graph-winston.png)
+![Wikimedia Commons Graph of a Sine Wave](https://upload.wikimedia.org/wikipedia/commons/1/12/Figure-sine-graph-winston.png)
  - We learned about basic periodic signals (sine, cosine)
  - We learned that they have **Phase, Frequency and Amplitude**
  
