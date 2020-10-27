@@ -81,11 +81,11 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 # Common Questions That Students Often Have at This Point 
 ## These are some common questions I often get asked by beginners once they get to this stage. I'm leaving them here in case they are useful
 
-- How can I make something happen visually based on a sound
+- How can I make something happen visually based on a sound?
 
-For this you need to do some form of analysis of the sound output. The first method you should probably try is to get the average of a block of samples. This super easy using the very first example I showed you, as I'm collecting blocks of samples (the sample buffer) which gives us a list 1024 numbers around 100 times a second. You can calculate the mean, and then use this to make something happen.
+For this you need to do some form of analysis of the sound output. The first method you should probably try is to get the average of a block of samples. This super easy using the very first example I showed you, as I'm collecting blocks of samples (the sample buffer) which gives us a list 1024 numbers around 100 times a second. You can calculate the mean, and then use this to make something happen. Another method would be to get a spectrogram (using the FFT Analyser - I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll ).
 
-- I'm calculating the mean of each sample buffer and this is working OK, but sometimes it seems not to capture the intensity of the signal very well.
+- I'm calculating the mean of each sample buffer and this is working OK, but sometimes it seems not to capture the intensity of the signal very well. Is there a better way?
 
 This is because you're smoothing the signal and the peak values are therefore being flattened. You could calculate a better measure by getting the square of each of these 1024 values, getting the mean of all of these squares, and then calculating the square root of that mean. This gives you the **Root Mean Square** output, or **RMS**.
 
@@ -108,7 +108,7 @@ else {
  reTrigCounter--//subtract one until you get to zero and you can trigger again
 }`
 
-But TBH this is not the best method. It's just the easiest to do if you've not done it before. A better method is to get the mean output of the last n spectral flux values and build an adaptive threshold using standard deviation. If this topic is of interest to you in general, I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll 
+But TBH this is not the best method. It's just the easiest to do if you've not done it before. A better method is to get the mean output of the last n spectral flux values and build an adaptive threshold using standard deviation, for which you'd need to do an FFT as above.
 
 - How can I control the sound with my body?
 
