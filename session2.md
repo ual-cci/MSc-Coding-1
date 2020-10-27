@@ -104,9 +104,13 @@ output = (((a3 * remainder + a2) * remainder + a1) * remainder + b);`
 - Don't blame me for this. It's a 'design feature' of the webAudio API that we've not been able to work around.
 `	 maxiAudio.loadSample('uploaded-sample.wav', mySample);`
 - Now you can ask the maxiSample object to pass amplitude values stored in the audio file to the output, or do pretty much anything else you like with it.
-- You can also use the maxiSample.play() functions to manipulate the sound by speeding it up, slowing it down, reversing it, triggering based on conditions etc.
+- You can also use the maxiSample.play() functions to manipulate the sound by speeding it up, slowing it down, reversing it, triggering based on conditions etc. These mostly use linear interpolation but you can try the play4 method if you wish to listen to the cubic interpolation. Further documentation is available via Chris Kiefer's MIMIC article here (check the section on maxiSample):
+https://mimicproject.com/guides/maximJS
 - You can also control the playback of the sample with any other signal
 - Or use the 'playOnce()' function to play the sound only once.
+This is a fun example that uses cubic interpolation
+https://mimicproject.com/code/25cecd79-bbce-c8cb-9d78-23501f6933f7
+
 
 ## Introduction to maxiClock
 - maxiClock is a simple system for triggering events based on BPM (Beats Per Minute) and 'Ticks' per beat.
