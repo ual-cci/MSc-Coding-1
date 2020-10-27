@@ -78,7 +78,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
  - Here's an advanced example that combines all the things we looked at in the last two weeks, as well as some other stuff including pattern generation, multiple voices, and fully implemented subtractive synthesiser examples.
  - https://mimicproject.com/code/afe3b617-4ad9-97df-6c8c-818b901897eb
 
-# FAQ
+# Common Questions That Students Often Have at This Point 
 ## These are some common questions I often get asked by beginners once they get to this stage. I'm leaving them here in case they are useful
 
 - How can I make something happen visually based on a sound
