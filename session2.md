@@ -161,7 +161,7 @@ https://mimicproject.com/code/25cecd79-bbce-c8cb-9d78-23501f6933f7
 
 - How can I make something happen visually based on a sound?
 
-For this you need to do some form of analysis of the sound output. The first method you should probably try is to get the average of a block of samples. This super easy using the very first example I showed you, as I'm collecting blocks of samples (the sample buffer) which gives us a list 1024 numbers around 100 times a second. You can calculate the mean, and then use this to make something happen. Another method would be to get a spectrogram (using the FFT Analyser - I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll ).
+For this you need to do some form of analysis of the sound output. The first method you should probably try is to get the average of a block of samples. This is super easy using the very first example I showed you, as I'm collecting blocks of samples (the sample buffer) which gives us a list 1024 numbers around 100 times a second. You can calculate the mean, and then use this to make something happen. Another method would be to get a spectrogram (using the FFT Analyser - I recommend you check out the excellent tutorial by Nick Collins, which is here on the MIMIC Project website : https://mimicproject.com/guides/mmll ).
 
 - I'm calculating the mean of each sample buffer and this is working OK, but sometimes it seems not to capture the intensity of the signal very well. Is there a better way?
 
