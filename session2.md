@@ -50,7 +50,14 @@ https://mimicproject.com/code/b6a1bbfa-5992-4e14-3814-0197d5984028
  - We'll also be getting more familiar with using % (modulo)
 
 ## What is a sample?
-- Last week we used the term 'sample' to describe an individual value, or number, between -1 and 1
+- Last week we used the term 'sample' to describe an individual value, or number, between -1 and 1, where the individual value (the *sample*) was usually stored in at least 16 bits. When you string these together, you get sound. These don't have to be simple sine waves. They can be any sound. Here's an example of a json array with some drum sounds in it.
+
+https://www.doc.gold.ac.uk/~mus02mg/samples.js
+
+- If you graphed one of these lists of numbers (e.g. just plotted them) you would see the entire waveform for that sound
+- Feel free to do this in excel. You'll possibly need to copy and paste the values in to a text file, and then import it as comma separated values (.csv), making sure to select the commas as the delimiters, which should actually be obvious to excel, but it isn't for reasons nobody but I care about.
+- As we've already discussed, all sounds can be seen as a collection of sinusoidal waves added together. When they are added, they become a single waveform with lots of different frequencies interacting in complex ways.
+- This isn't something you can just understand immediately. It takes time. But you should probably spend some time thinking very hard about it.
 
  
  ## Example code for this session:
