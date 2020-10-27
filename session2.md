@@ -6,7 +6,7 @@
  
  - Phase (where they are in their cycle)
  - Frequency (how often they repeat their cycles)
- - Amplitude (the *peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**)
+ - Amplitude (the *peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**), with a *node* inbetween at infinity (when it is at zero).
  - *Both Amplitude and Frequency relate to Phase*
  - Amplitude is the highest value the signal can produce (at its peak - remember, it's an oscillation through positive and negative phase!)   
  - Frequency is how often the complete phase cycle repeats every second
@@ -14,10 +14,10 @@
  
  *Also* 
  
- - We learned how to add period signals together, how this can cause distortion, and also generate beating.
+ - We learned how to add periodic signals together, how this can cause distortion, and also generate beating.
  - We learned how to multiply them together to create amplitude modulation (AM), and how this creates sum and difference tones.
  - We learned how to use one periodic signal to control the frequency of another, and how how this creates frequency modulation (FM)
- - We also learned that this is that we can create complexity by doing this, and that increasing the modulation index of the modulating wave (i.e., its amplitude) increases the number of overtones (without generating distortion!), and that we perceive this as an increase in brightness 
+ - We also learned that we can create complexity by doing this; increasing the modulation index of the modulating wave (i.e., its amplitude) increases the number of overtones (without generating distortion!). We perceive this as an increase in brightness. Also, when the frequencies are factors or multiples of one another, or some other value, we get harmonic overtones (less beating **because the nodes are in phase**), and if they aren't, we get more beating (**because the nodes are out of phase**)
  - We tried to use basic waveforms to create a range of sounds that continually changed
  - We got a taste of the approach we need to do these things in JavaScript
  - We used variables, objects and basic functions. We also used basic operators (+, -, *, /)
