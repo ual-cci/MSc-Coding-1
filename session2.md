@@ -64,6 +64,7 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 
 ## Manipulating samples by changing their playback rate, order, and position
 - Once you have samples loaded in to memory, you can manipulate them just like any other list of numbers
+- For example, you could randomly select samples, or read the samples backwards.
 - Two common operations people often want to do are: speeding up the playback rate, and slowing down the playback rate
 - You can easily double the speed of playback by only playing back every other amplitude value in the list 
 - You can also halve the speed of playback by playing every amplitude value twice.
