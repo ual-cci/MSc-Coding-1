@@ -5,9 +5,9 @@
  - We learned about basic periodic signals (sine, cosine)
  - We learned that they have **Phase, Frequency and Amplitude**
  
- - Phase (where they are in their cycle). This is often measured in degrees. With a sinusoidal waveform, 0 degrees is the start, 90 degrees is the postive peak, 180 degrees is when it returns to the centre line, 270 degrees is the negative peak, and 360 degrees is the start of the next cycle etc. etc. When we reach 360, we can either begin measuring from 0 again (i.e., we can 'wrap' the phase so it's always between 0 and 360), or we can continue to increase the phase. The latter is less common.
- - Frequency (how often they repeat their cycles). This is measured in Hertz (Hz), or CPS (cycles per second).
- - Amplitude (the *absolute peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**), with a *node* inbetween at infinity (when it is at zero). By absolute, we mean with the sign removed, so -1 in that case can be thought of as 1 in absolute terms, despite needing to be considered as -1 for the purposes of representing the phase of the signal either side of 0.
+ - **Phase** (where they are in their cycle). This is often measured in degrees. With a sinusoidal waveform, 0 degrees is the start, 90 degrees is the postive peak, 180 degrees is when it returns to the centre line, 270 degrees is the negative peak, and 360 degrees is the start of the next cycle etc. etc. When we reach 360, we can either begin measuring from 0 again (i.e., we can 'wrap' the phase so it's always between 0 and 360), or we can continue to increase the phase. The latter is less common.
+ - **Frequency** (how often they repeat their cycles). This is measured in Hertz (Hz), or CPS (cycles per second).
+ - **Amplitude** (the *absolute peak* output, which for audio is between 1 and -1, the **maximum amount the speaker can move**), with a *node* inbetween at infinity (when it is at zero). By absolute, we mean with the sign removed, so -1 in that case can be thought of as 1 in absolute terms, despite needing to be considered as -1 for the purposes of representing the phase of the signal either side of 0.
  - *Both Amplitude and Frequency relate to Phase*
  - Amplitude is the highest value the signal can produce (at its peak - remember, it's an oscillation through positive and negative phase!)   
  - Frequency is how often the complete phase cycle repeats every second
