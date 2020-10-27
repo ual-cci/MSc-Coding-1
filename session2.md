@@ -31,7 +31,7 @@
  
  I asked you to make a sound composition by forking a document, creating some new oscillator objects (maxiOsc objects), and using them to control other maxiOsc objects :-)
 
-## First
+## Reviewing the Homework
  - Lets review the work that you have done in the last week. 
  - Then we're going to have a question and answer session about the example code you were given just to go over the basics.
  
