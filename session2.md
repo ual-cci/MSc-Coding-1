@@ -96,7 +96,6 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
  `myClock.ticker();`
  - You can then run a test with a conditional to see if there's a clock tick happening, and if there is, make something happen.
  `if( myClock.tick ) {
- 
  mySample.trigger();
  
  }`
