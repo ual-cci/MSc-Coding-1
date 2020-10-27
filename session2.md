@@ -60,8 +60,54 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - As we've already discussed, all sounds can be seen as a collection of sinusoidal waves added together. When they are added, they become a single waveform with lots of different frequencies interacting in complex ways.
 - This isn't something you can just understand immediately. It takes time. But you should probably spend some time thinking very hard about it.
 
-- In any case, it's quite common for people to describe a selection of recorded samples 
+- **In any case, it's quite common for people to describe a selection of recorded samples as a 'sample'**
+
+## How to Load a Sample
+- Loading and playing back a sample is super easy using MIMIC
+- You can use the maxiSample object from the Maximilian library 
+- First you need to create a maxiSample Object:
+`var mySample = new maximJs.maxiSample();`
+- Then you need to load in a sample (make sure you've uploaded an audio file to the MIMIC Platform first - it can be in any format your browser supports)
+- Annoyingly, we have to pass the name of the audio file to the sample object you created using the main maxiAudio object (gah!).
+- Don't blame me for this. It's a 'design feature' of the webAudio API that we've not been able to work around.
+`	 maxiAudio.loadSample('uploaded-sample.wav', mySample);`
+- Now you can ask the maxiSample object to pass amplitude values stored in the audio file to the output, or do pretty much anything else you like with it.
+- You can also use the maxiSample.play() functions to manipulate the sound by speeding it up, slowing it down, reversing it, triggering based on conditions etc.
+- You can also control the playback of the sample with any other signal
+- Or use the 'playOnce()' function to play the sound only once.
+
+## Introduction to maxiClock
+- maxiClock is a simple system for triggering events based on BPM (Beats Per Minute) and 'Ticks' per beat.
+- BPM is a means for setting the rate of playback by how many events you want to trigger each minute
+- You can also divide up each beat in to more events, called 'ticks'.
+- Professional audio systems can have thousands of ticks per beat.
+- Most musicians tend to use musical rhythmic concepts, specifically note durations, for dividing up beats.
+- A beat is a crotchet, half a beat is a quaver, a quarter of a beat is a semiquaver (four per beat). You can also have demi-semiquavers and hemi-demi-semiquavers.
+- Frankly these days you can do what you want.
+- The below code sets up a maxiClock object called 'myClock'.
+
+`var myClock = new maximJs.maxiClock();
+ myClock.setTempo(myTempo);
+ myClock.setTicksPerBeat(2);`
  
+ ## Triggering a sample with maxiClock
+ - In order to make the clock count ticks, you need to run the 'maxiClock.ticker()' method in the main maximilian 'play' function.
+ - So if your maxiClock object is called 'myClock', you need this in 'play':
+ `myClock.ticker();`
+ - You can then run a test with a conditional to see if there's a clock tick happening, and if there is, make something happen.
+ `if( myClock.tick ) {
+ 
+ mySample.trigger();
+ 
+ }`
+ - You can also check to see where the maxiClock playHead is. You can then make things happen if the playHead is before, at or after a certain point:
+ 
+ `if( myClock.tick && myClock.playHead>=100){       
+   mySample.trigger();
+// Also do anything else you fancy
+}`
+ 
+
  ## Example code for this session:
   - This basic drum machine example has everything you need in it
   - https://mimicproject.com/code/9538f995-f184-8a64-967c-f5de93e58076
