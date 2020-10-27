@@ -5,15 +5,15 @@
  - We learned that they have 
  
  -- Phase (where they are in their cycle)
- -- Frequency (how often they repeat their cycles)
+  - Frequency (how often they repeat their cycles)
  and
- -- Amplitude (the *peak* output).
+  - Amplitude (the *peak* output).
  - Both Amplitude and Frequency relate to Phase
- -- Amplitude is the highest value the signal can produce (at its peak - remember, it's an oscillation through positive and negative phase!)   
- -- Frequency is how often the compelete phase cycle repeats every second
- -- Hopefully you worked the following out for yourself:
- --- The higher the frequency, the higher the perceived pitch
- --- The higher the amplitude, the higher the perceived volume
+  - Amplitude is the highest value the signal can produce (at its peak - remember, it's an oscillation through positive and negative phase!)   
+  - Frequency is how often the compelete phase cycle repeats every second
+  - Hopefully you worked the following out for yourself:
+   - The higher the frequency, the higher the perceived pitch
+   - The higher the amplitude, the higher the perceived volume
  
  *Also* 
  
