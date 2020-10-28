@@ -148,6 +148,12 @@ https://mimicproject.com/code/25cecd79-bbce-c8cb-9d78-23501f6933f7
   - Here is a more developed example with the play-button code in it, and a more complex output:
   - https://mimicproject.com/code/86a2fefb-4314-16dc-a7d5-fd930bd481d0
 
+## Extending this idea
+- Once you have loaded some sounds, you can control them in quite complex ways
+- You can also trigger them using the maxiClock mechanism
+- Further to this, you can use modulo `%` to generate interesting rhythmic outcomes
+- You can also use randomness to generate basic decision-making systems. 
+- With a relatively small amount of imagination, using only these techniques, you can make some pretty exciting interactive and generative audio
 
 # Exercise for this week
  - Create a soundscape or rhythmic piece that uses at least four sounds, and continually changes for over 2 minutes. 
