@@ -83,19 +83,20 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - Basically, take a, and add on half the difference between b and a.
 
 ![Linear Interpolation Graph from Wikipedia Commons](https://upload.wikimedia.org/wikipedia/commons/6/68/Linear_interpolation.png)
+This graph might help you to visualise this process a bit more - although this is a 2D plot, and at the moment we're only really thinking about a 1d signal - but the extra dimension can make it easier to think about. We'll be returning to this idea a few times in the course. In the graph, the new point is (x,y). (x0,y0) and (x1,y1) are what we're calling a and b respectively above.
 
 - This works for most things, but generates noise in the high frequency signal components, as it is literally drawing a straight line between two points where there should instead be a curve. 
 - Also, in real situations, you need to calculate the remainder on the fly - it won't simply be halfway, and will depend on the playback speed.
 - You can do this by subtracting the desired position (where you want to read a value from given your playback speed, e.g. [1.5]) from the nearest prior position (which would be 1 in this case).
 - Like this : `remainder = position - Math.floor(position);`
 - You can then calculate the imaginary amplitude value at that imaginary position as follows:
-- `amplitude = ((1-remainder) * amplitudes[a] + remainder * amplitudes[b]);`, which is more or less the same as the above.
+- `amplitude = ((1-remainder) * a + remainder * b);`, which is more or less the same as the above.
 - An even better interpolation algirithm is to use cubic interpolation, which augments the above by calculating a curve between the two points by using two more points to help define the slope. So you get the sample before the closest point (a), the closest point (b), and two of the upcoming points (c and d), and process them using a series of constants that define the nature of the slope.
-- There are many different cubic interpolation algorithms, and they don't all sound the same, despite the mathematical differences being not very large - this is just the nature of audio, as the ear can be very sensitive. This is one of the **best sounding** cubic interpolation algorithms you will find in my opinion:
+- As an extra bit of information for those that are interested, there are many different cubic interpolation algorithms, and they don't all sound the same, despite the mathematical differences being not very large - this is just the nature of audio, as the ear can be very sensitive. This is one of the **best sounding** cubic interpolation algorithms you will find in my opinion, but :
 
-`a1 = 0.5f * (c - a);
-a2 = a - 2.5 * b + 2.f * c - 0.5f * d;
-a3 = 0.5f * (d - a) + 1.5f * (b - c);
+`a1 = 0.5 * (c - a);
+a2 = a - 2.5 * b + 2.0 * c - 0.5 * d;
+a3 = 0.5 * (d - a) + 1.5 * (b - c);
 output = (((a3 * remainder + a2) * remainder + a1) * remainder + b);`
 
 ## How to Load a Sample
