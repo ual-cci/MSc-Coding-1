@@ -81,6 +81,9 @@ https://www.doc.gold.ac.uk/~mus02mg/samples.js
 - So for example, if array value 1 (point a) has a value of 0.5, and array value 2 (point b) has a value of 1.0, and you are trying to find a value halfway between these (let's call this the remainder, and it's halfway so we can say this is 0.5), you could use the below algorithm:
 - `a + ((b - a) * remainder))`
 - Basically, take a, and add on half the difference between b and a.
+
+![Linear Interpolation Graph from Wikipedia Commons](https://upload.wikimedia.org/wikipedia/commons/6/68/Linear_interpolation.png)
+
 - This works for most things, but generates noise in the high frequency signal components, as it is literally drawing a straight line between two points where there should instead be a curve. 
 - Also, in real situations, you need to calculate the remainder on the fly - it won't simply be halfway, and will depend on the playback speed.
 - You can do this by subtracting the desired position (where you want to read a value from given your playback speed, e.g. [1.5]) from the nearest prior position (which would be 1 in this case).
