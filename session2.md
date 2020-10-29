@@ -30,6 +30,11 @@
  - We used variables, objects and basic functions. We also used basic operators (+, -, *, /)
  - Some of you might have come across some additional math objects (abs, exp, sin, cos). I definitely used one of these which you will have seen if you were paying close attention.
  
+  - As promised, we're also going to look at some spectral plots so we can examine the way the signals interact in more detail:
+ 
+ Lets do this now:
+https://mimicproject.com/code/b6a1bbfa-5992-4e14-3814-0197d5984028
+ 
  **Homework From Last Session**
  
  I asked you to make a sound composition by forking a document, creating some new oscillator objects (maxiOsc objects), and using them to control other maxiOsc objects :-)
@@ -37,10 +42,6 @@
 ## Homework Review
  - Lets review the homework :-) 
  - Then we're going to have a question and answer session about the example code you were given just to go over the basics
- - As promised, we're also going to look at some spectral plots so we can examine the way the signals interact in more detail:
- 
- Lets do this now:
-https://mimicproject.com/code/b6a1bbfa-5992-4e14-3814-0197d5984028
  
 # Session 2: SAMPLES!
  - We're going to explore how to load samples and manipulate them
