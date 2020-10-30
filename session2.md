@@ -168,7 +168,7 @@ https://mimicproject.com/code/25cecd79-bbce-c8cb-9d78-23501f6933f7
  - https://mimicproject.com/code/afe3b617-4ad9-97df-6c8c-818b901897eb
 
 # Common Questions
-## These are some common questions I often get asked by beginners once they get to this stage. This FAQ is getting shorted all the time as we add more MIMIC examples, but some of this might be useful to you so I'll leave it here.
+## These are some common questions I often get asked by beginners once they get to this stage. This FAQ is getting shorter all the time as we add more MIMIC examples, but some of this might be useful to you so I'll leave it here.
 
 - How can I make something happen visually based on a sound?
 
