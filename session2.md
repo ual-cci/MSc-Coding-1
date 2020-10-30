@@ -178,7 +178,7 @@ For this you need to do some form of analysis of the sound output. The first met
 
 This is because you're smoothing the signal and the peak values are therefore being flattened. You could calculate a better measure by getting the square of each of these 1024 values, getting the mean of all of these squares, and then calculating the square root of that mean. This gives you the **Root Mean Square** output, or **RMS**.
 
-- I tried connecting the mean output of the sound to the parameter of my graphics system, but it's giving me a continuous signal. How can I trigger something absed on this instead of just using the value?
+- I tried connecting the mean output of the sound to the parameter of my graphics system, but it's giving me a continuous signal. How can I trigger something based on this instead of just using the value?
 
 You can use a conditional to check if the value goes over a certain amount, and then use this to trigger something. This bit of code is probably a good starting point (you would of course need to define these variables yourself) :
 
