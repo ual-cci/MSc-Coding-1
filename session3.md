@@ -185,7 +185,7 @@ https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
   - https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
   
 
-## Synthesising Waveform Graphs Directly
+## Synthesising 2D Waveform Graphs Directly
 - Let's build a simple system for creating polar curves without audio
 - This is a simple form of one of John Whitney's favorite algorithms, which he referred to as *The Roses of Grandii*
 - The original curve was created by Luiugi Guido Grandii in 1728. It's called *Flores geometrici* and is very well known
