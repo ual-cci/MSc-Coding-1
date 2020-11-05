@@ -1,4 +1,13 @@
-# Session 3: Coordinate systems
+# Session 3: 2D Graphics Part One: Coordinate Systems and Signals
+
+![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
+
+## Recap of Last Session
+### Loading Samples and Controlling Timing
+
+- Last session we 
+
+
 
 ## Introduction
  - This session is about 2D graphics
