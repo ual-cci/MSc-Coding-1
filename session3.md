@@ -209,8 +209,7 @@ https://mathworld.wolfram.com/Rose.html
   var draw = function() {
 
     for (var i = 0; i<500; i++) {
-//    context.fillRect(positionX+Math.cos(i*1*Math.sin(i*1))*size,positionX+ Math.sin(i * 1*Math.sin(i*1))*size,penSize,penSize);
- //   }
+
     context.fillRect(positionX+Math.cos(i*Math.sin(i))*radius,positionX+ Math.sin(i *Math.sin(i))*radius,penSize,penSize);
     }
     requestAnimationFrame(draw);
