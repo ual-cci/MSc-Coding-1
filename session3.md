@@ -16,7 +16,7 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
  - In terms of programming skills, we'll be using the js canvas quite a bit today
  - We will also be using for loops to create simple visual algorithms
 
-# Recap of Last Session
+# Part 1: Recap of Last Session
 
 ## Understanding Samples and how they work
 
@@ -45,9 +45,11 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
 - We looked at how we can use conditionals to test for specific situations, and make creative decisions based on these
 - I then asked you to use these methods to create some simple sound-based systems as part of your homework :-)
 
-Let's
+# Homework Review
+## Let's spend some time reviewing the homework before we continue!
+
  
-# Visualising Sound waves
+# Part 2: Visualising Sound waves
   
  # Let's take another look at the visualisation code we've been using:
  https://mimicproject.com/code/9e2e7a7f-e1b9-8606-a48b-f50428596cb8
@@ -78,23 +80,33 @@ Let's
 ## Polar to Cartesian Conversion (POLTOCAR)
  - In order to draw polar systems, we need to convert from polar to cartesian coordinates
  - We do this as follows:
- - x = (r * cos( θ ))
- - y = (r * sin( θ ))
+ - `x = (r * cos( θ ))`
+ - `y = (r * sin( θ ))`
  - θ is the angle in radians (we often call this 'theta', or 'phase')
  - r is the radius (or magnitude, or amplitude)
  - sin and cos are the mathematical functions we use to create curves
  - Together they allow us to work out where x and y are when we are thinking about angles and distances.
  - It's almost ALWAYS a good idea to think about angles and distances, and we'll be returning to this idea all the time
+ - When the radius is equal to 1, we think of the circumference of the circle is `TWO * PI` (`2PI` or `TWOPI` or `2 * 3.14159` or just `6.28318`).
+ - This means if we know how many segments we want to use to divide up the circle, we can divide TWOPI
  
 ## Radius
- - The radius / magnitude is the distance from the origin
- - We can use to scale polar coordinates easily
- - This is because the angle contains the direction of travel 
+ - The radius / magnitude is the distance from the origin (the centre)
+ - We can use this to scale coordinates easily
+ - This is because the angle contains the direction of travel
+ - When we multiply the angle by the radius, the point we are drawing moves further away from the centre
+ - It does this in the direction described by the angle
+ - When we convert from polar coordinates back to cartesian coordinates, the angle is contained in both the x and y coordinate.
+ - This is why when we multiply both x and y coordinate of a point, it increases in magnitude, and this magnitude is equal to the radius.
  
 ## Getting the Radius back - CARTOPOL
  - We can use Pythagoras’ theorem to convert cartesian coordinates to a radius
  - This is because the radius (magnitude) is the length of the hypotenuse from the origin to (x,y)
  - This is also incredibly useful for finding out how far away you are from something
+ - I'm sure you remember this from High School:
+ 
+ ![pythagoras theorem (creative commons license)](https://upload.wikimedia.org/wikipedia/commons/9/9e/Pythagoras-proof-anim.svg)
+ 
  
 ## CARTOPOL Theta
  - Getting the angle is more complicated - but very useful, as it represents the direction from the origin in radians
@@ -120,12 +132,13 @@ Let's
   - When we do this, we can see the phase wrapped around the c
   - The length of the lines is the amplitude of the value in the array
   - https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
+  
 
-## Drawing Polar Graphs of Waveforms
-  
-  
-## John Whitney Sr
-- 
+## Synthesising Graphical Systems Using Polar Coordinates
+- Let's look more closely at the polar coordinate system code we used for the visualisation
+- https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
+- We have a number of variables that are useful for defining such systems
+- We have the size, the number of lines we are drawing, 
 
 https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
   
