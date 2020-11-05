@@ -97,16 +97,15 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
 - Some of his earliest computer graphics work was completed on discarded M5 and M7 targetting computers
 - This led to him creating the first computer generated title sequence in 1957
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4CZfSc6nJ8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Vertigo Title Sequence](https://www.youtube.com/watch?v=4CZfSc6nJ8U)
 
 - Here's an interesting online article on the topic with some photographs of the device he used:
 https://www.diyphotography.net/alfred-hitchcocks-vertigo-possibly-first-movie-use-computer-animation/
 
 - He and his brother James won a prize at the world's first experimental film festival for a series of works they created in 1944 entitled *Five Abstract Film Exercises*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nTEABxz1e_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![John and James Whitney, Five Abstract Film Exercises, Number 4](https://www.youtube.com/watch?v=nTEABxz1e_k)
 
-- The above film is number 4. One interesting question is, where is number 5?
 
 - 
 
