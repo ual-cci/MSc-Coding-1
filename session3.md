@@ -71,14 +71,16 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
 `
 - Then we equally space each line across the screen using a for loop
 
-```javascript           for (var i = 0; i < 1024; i++) {
+```javascript
+           
+           for (var i = 0; i < 1024; i++) {
                 context.beginPath();
                 context.moveTo(i * spacing, height / 2);
                 context.lineTo(i * spacing, height / 2 + (drawOutput[i] * height / 4));
                 context.stroke();
                 context.closePath();
-            }```
-
+            }
+```
 
 ## Part 3: Polar Coordinate systems
  - Here, we've been using a rectangular (or cartesian) coordinate system
