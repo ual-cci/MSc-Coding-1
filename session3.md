@@ -97,17 +97,22 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
 - Some of his earliest computer graphics work was completed on discarded M5 and M7 targetting computers
 - This led to him creating the first computer generated title sequence in 1957
 
-![Vertigo Title Sequence](https://www.youtube.com/watch?v=4CZfSc6nJ8U)
+https://www.youtube.com/watch?v=4CZfSc6nJ8U
 
 - Here's an interesting online article on the topic with some photographs of the device he used:
 https://www.diyphotography.net/alfred-hitchcocks-vertigo-possibly-first-movie-use-computer-animation/
 
-- He and his brother James won a prize at the world's first experimental film festival for a series of works they created in 1944 entitled *Five Abstract Film Exercises*
+- He and his brother James won a prize at the world's first experimental film festival for a series of works they created in 1944 entitled *Five Abstract Film Exercises*.
+- This link is film number 4 from that series. The images are created with pantographs, and the audio is additive synthesis plotted on graph paper, and drawn on to the soundtrack using modified pendulums.
 
-![John and James Whitney, Five Abstract Film Exercises, Number 4](https://www.youtube.com/watch?v=nTEABxz1e_k)
+https://www.youtube.com/watch?v=nTEABxz1e_k
 
+In 1961, John Whitney produced this film, which is a Catalogue of artworks comprising some of the world's first computer animation.
+https://www.youtube.com/watch?v=TbV7loKp69s
 
-- 
+This is a fascinating film where John Whitney explains his early computer graphics experiments at IBM
+https://www.youtube.com/watch?v=jIv-EcX9tUs
+
 
 https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
 
@@ -180,11 +185,48 @@ https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
   - https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
   
 
-## Synthesising Graphical Systems Using Polar Coordinates
-- Let's look more closely at the polar coordinate system code we used for the visualisation
-- https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
-- We have a number of variables that are useful for defining such systems
-- We have the radius, the number of lines we are drawing,
+## Synthesising Waveform Graphs Directly
+- Let's build a simple system for creating polar curves without audio
+- This is a simple form of one of John Whitney's favorite algorithms, which he referred to as *The Roses of Grandii*
+- The original curve was created by Luiugi Guido Grandii in 1728. It's called *Flores geometrici* and is very well known
+- You can find plenty of examples of Flores geometrici on the web in fairly complex form.
+- There's quite a boring article on the algorithm on Mathematica.
+https://mathworld.wolfram.com/Rose.html
+- The version we are going to create is the basic curve as described above.
+
+- Here's the code
+```javascript
+
+  let canvas = document.querySelector("canvas");
+  let context = canvas.getContext("2d");
+  canvas.width = 800;
+  canvas.height = 600;
+  
+  var radius = 100;
+  var penSize = 5;
+  var positionX = 200
+  
+  var draw = function() {
+
+    for (var i = 0; i<500; i++) {
+//    context.fillRect(positionX+Math.cos(i*1*Math.sin(i*1))*size,positionX+ Math.sin(i * 1*Math.sin(i*1))*size,penSize,penSize);
+ //   }
+    context.fillRect(positionX+Math.cos(i*Math.sin(i))*radius,positionX+ Math.sin(i *Math.sin(i))*radius,penSize,penSize);
+    }
+    requestAnimationFrame(draw);
+    
+  }
+  
+  requestAnimationFrame(draw);
+  ```
+
+# Session 3 Homework
+
+- For homework, I want you to make the most colourful, opulent, dynamic interactive variation of this algorithm you can
+- Here's a slightly more developed version of *Flores geometrici* that uses the mouse to control the formation of the petals
+- https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
+- Notice that this one calculates the spacing around the circle and uses this as a parameter to create harmonics, similar to those we saw in the audio visualisation
+- Use at least two different rose systems to create your design. Consider using a function to generate many copies of the shape in different forms.
 
 
   
