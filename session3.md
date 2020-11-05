@@ -1,6 +1,7 @@
 # Session 3: 2D Graphics Part One: 2D Signal Systems
 
 ![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
+
 Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/content/images/ais/
 
 ## Recap of Last Session
