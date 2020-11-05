@@ -194,7 +194,7 @@ https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
 https://mathworld.wolfram.com/Rose.html
 - The version we are going to create is the basic curve as described above.
 
-- Here's the code
+- Here's most of the code...
 ```javascript
 
   let canvas = document.querySelector("canvas");
