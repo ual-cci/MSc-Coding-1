@@ -1,43 +1,73 @@
-# Session 3: 2D Graphics Part One: 2D Signal Systems
+# Session 3: 2D Graphics Part One: Dynamic Signals, Graphs and Coordinate Systems
 
 ![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
 
 Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/content/images/ais/
 
-## Recap of Last Session
-### Loading Samples and Controlling Timing
-
-- Last session we 
-
-
-
 ## Introduction
  - This session is about 2D graphics
  - More specifically it's about 2D graphics under the hood
- - It's also about how we use 2D graphics to visualise and explore information and concepts
+ - It's also about how we use 2D graphics to visualise and explore information, concepts and visual experiences
  - We're going to start by understanding how to visualise some of the sounds we've made 
- - Then we're going to try and do similar things but just using 2D graphics
- - This will mean using functions and expressions to create curves
- - We'll be using lots of for loops this session
+ - We're going to look at different ways you can plot waveforms in 2D and think about how we explore these creatively
+ - We're going to try and create simple visual synthesisers using the same approaches, but in 2 Dimensions
+ - This will mean using functions and expressions to create curves in space
+ - We'll also think about how these curves in space can be thought of as representing different kinds of information or experiences
+ - In terms of programming skills, we'll be using the js canvas quite a bit today
+ - We will also be using for loops to create simple visual algorithms
+
+# Recap of Last Session
+
+## Understanding Samples and how they work
+
+- Last session we learned how 1D audio data is represented in a computer system
+- We thought about how microphones work, and how they convert acoustic vibration in to variations in an electromagnetic field
+- We also refreshed our knowledge of how these field variations can be measured by a computer as lists of numbers.
+- We looked at lists of 16bit values and graphed them, and considered what happens when we push them through a speaker at different speeds
+- (although we glossed over how Analogue to Digital and Digital to Analogue Converters work)
+- We also considered how *anything* - not just representations of acoustic waves in an electromagnetic field expressed as lists of numbers - can be sonified.
+
+## Sample Interpolation
+- We learned that you can manipulate the playback speed of samples, thus changing the perceived pitch and duration of the waveforms they represent
+- We also thought about the fact that we need to make up new sample values when we change the plaback rate, through a process called 'interpolation'
+- We looked at a few different types of interpolation, including linear and cubic interpolation, and talked about how they work 
+- Finally, we learned that you can just use the maxiSample object to save you from all this pain.
+
+## Loading and Controlling Samples
+- We used maxiSample to load and play back samples
+- We used oscillators to modulate the playback speed of samples
+- We also explored how you can play back samples in reverse by running through the list of numbers backwards (interpolating in reverse as we go!)
+
+## Triggering Precise Events Using maxiClock
+- We learned that we can use oscillators to create simple, sample accurate clock mechanisms
+- I introduced you to maxiClock, which is basically an oscillator-driven clock machanisms with some slightly more intuitive controls.
+- We learned how to set the tempo in Beats Per Minute, how to set the number of 'ticks' per beat, and how to use these values to make things happen at specific times
+- We looked at how we can use conditionals to test for specific situations, and make creative decisions based on these
+- I then asked you to use these methods to create some simple sound-based systems as part of your homework :-)
+
+Let's
  
-## Visualising Sound waves
+# Visualising Sound waves
+  
+ # Let's take another look at the visualisation code we've been using:
+ https://mimicproject.com/code/9e2e7a7f-e1b9-8606-a48b-f50428596cb8
  - We can visualise wave forms very easily with maximilian
  - We do this by grabbing the audio buffer and writing it to an array
  - We can then create a draw loop and use the buffer output to draw lines of different lengths for each amplitude value
  - Each time the buffer changes, we get a new frame of audio values
  - The different line lengths correspond to the amplitude of the signal described by each value in the buffer.
- 
- # Check it out:
- https://mimicproject.com/code/9e2e7a7f-e1b9-8606-a48b-f50428596cb8
- 
+
 ## Coordinate systems
  - Here, we've been using a rectangular (or cartesian) coordinate system
  - This is the system we usually use for drawing when we start out
  - https://en.wikipedia.org/wiki/Cartesian_coordinate_system
  - It's important to realise that there are other types of coordinate systems
  - We need these to do anything other than draw straight lines.
+ - Today, we are going to be drawing lots of curves. To do this, we need to use a very different 2D representation called a **Polar Coordinate System**
  
-## Drawing Circles
+## Drawing Circles Using Polar Coordinate
+- Usually when we draw circles, we call a function to do so
+- e.g. we can use the canvas `arc` function, or the p5 `circle` or `ellipse` functions 
  - When you call the ellipse function in processing, or use the arc function on the JS Canvas the computer runs a function 
  - That function takes a position value for the centre of the circle (the origin), and a radius (distance from the origin)
  - It uses these two values to draw the circle using trigonometry. 
@@ -81,20 +111,22 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
  - spacing is the distance around the circle
  - x = cos(spacing*n)*a
  - y = sin(spacing*n)*b
- 
-## Drawing polar waveforms
+
+## Drawing Polar Graphs of Waveforms
   - We can use this approach to draw the audio waveforms around a circle instead of in a line across the screen
   - We do this in the same way, but instead of joining up points around the circle, we draw lines of different lengths
   - The lines are spaced around the circle
+  - They are drawn from the centre of the circle (amplitude = 0) to the edge (maximum amplitude)
+  - When we do this, we can see the phase wrapped around the c
   - The length of the lines is the amplitude of the value in the array
   - https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
-  
-# Exercise 
- - Take a look at this example. We use processing to create interesting shapes - I'll explain more about them later.
- - https://mimicproject.com/code/17134a36-adbd-d602-8947-dcfb87cec39b
- - Convert these processing examples so that they work in pure JavaScript
- - We're doing this to make you think about the actual algorithm
- 
 
+## Drawing Polar Graphs of Waveforms
+  
+  
+## John Whitney Sr
+- 
+
+https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
   
  
