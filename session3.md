@@ -82,15 +82,39 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
             }
 ```
 
-## Part 3: Polar Coordinate systems
+## Coordinates
  - Here, we've been using a rectangular (or cartesian) coordinate system
  - This is the system we usually use for drawing when we start out
  - https://en.wikipedia.org/wiki/Cartesian_coordinate_system
  - It's important to realise that there are other types of coordinate systems
  - We need these to do anything other than draw straight lines.
  - Today, we are going to be drawing lots of curves. To do this, we need to use a very different 2D representation called a **Polar Coordinate System**
+
+# John Whitney Senior
+
+- John Whitney Senior is a key figure in computer graphics
+- He was originally a composer who used a number of techniques to create experimental music and video art
+- Some of his earliest computer graphics work was completed on discarded M5 and M7 targetting computers
+- This led to him creating the first computer generated title sequence in 1957
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4CZfSc6nJ8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Here's an interesting online article on the topic with some photographs of the device he used:
+https://www.diyphotography.net/alfred-hitchcocks-vertigo-possibly-first-movie-use-computer-animation/
+
+- He and his brother James won a prize at the world's first experimental film festival for a series of works they created in 1944 entitled *Five Abstract Film Exercises*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nTEABxz1e_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- The above film is number 4. One interesting question is, where is number 5?
+
+- 
+
+https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
+
+# Part 3  
  
-## Drawing Circles Using Polar Coordinate
+## Using Polar Coordinates
 - Usually when we draw circles, we call a function to do so
 - e.g. we can use the canvas `arc` function, or the p5 `circle` or `ellipse` functions 
  - When you call the ellipse function in processing, or use the arc function on the JS Canvas the computer runs a function 
@@ -161,8 +185,8 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
 - Let's look more closely at the polar coordinate system code we used for the visualisation
 - https://mimicproject.com/code/a7e2f833-49c8-d71f-99bd-19a993321e7e
 - We have a number of variables that are useful for defining such systems
-- We have the size, the number of lines we are drawing, 
+- We have the radius, the number of lines we are drawing,
 
-https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
+
   
  
