@@ -1,4 +1,4 @@
-# Session 3: 2D Graphics Part One: Dynamic Signals, Graphs and Coordinate Systems
+# Session 3: 2D Graphics Part One: Graphs, Shapes and Coordinates
 
 ![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
 
