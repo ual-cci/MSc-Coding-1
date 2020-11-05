@@ -160,9 +160,9 @@ https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
  
  
 ## CARTOPOL Theta
- - Getting the angle is more complicated - but very useful, as it represents the direction from the origin in radians
+ - Getting the angle is more complicated - but very useful, as it represents the direction from the origin
  - tan( θ ) = y / x So
- - θ = tan-1 ( 5 / 12 )
+ - θ = tan-1 ( y / x )
  - tan-1 is atan() - the inverse tangent
  - So the angle in radians = atan(y/x) for positive nonzero numbers
  - atan2 is used for all four quadrants of a cartesian coordinate space and cases where x=0
