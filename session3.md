@@ -1,4 +1,4 @@
-# Session 3: 2D Graphics Part One: Coordinate Systems and Signals
+# Session 3: 2D Graphics Part One: 2D Signal Systems
 
 ![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
 
