@@ -51,7 +51,7 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
  
 # Part 2: Visualising Sound waves
   
- # Let's take another look at the visualisation code we've been using:
+ ## Let's take another look at the visualisation code we've been using:
  https://mimicproject.com/code/9e2e7a7f-e1b9-8606-a48b-f50428596cb8
  - We can visualise wave forms very easily with maximilian
  - We do this by grabbing the audio buffer and writing it to an array
@@ -59,7 +59,28 @@ Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/cont
  - Each time the buffer changes, we get a new frame of audio values
  - The different line lengths correspond to the amplitude of the signal described by each value in the buffer.
 
-## Coordinate systems
+## Analysing the draw code
+- So we know we're going to take each value in the list and use it to create a line
+- And the length of the line is based on the size of the value in the audio buffer
+- So each frame is a visualisation of each audio buffer
+- The reason it appears stationary (isn't moving around) is that we have locked the audio waveform duration to the number of values in each buffer
+- We are then dividing up the width of the screen by the number of values in each audio buffer
+- This is the default value - 1024. 
+
+`        var spacing = (width / 1024);
+`
+- Then we equally space each line across the screen using a for loop
+
+`           for (var i = 0; i < 1024; i++) {
+                context.beginPath();
+                context.moveTo(i * spacing, height / 2);
+                context.lineTo(i * spacing, height / 2 + (drawOutput[i] * height / 4));
+                context.stroke();
+                context.closePath();
+            }`
+
+
+## Part 3: Polar Coordinate systems
  - Here, we've been using a rectangular (or cartesian) coordinate system
  - This is the system we usually use for drawing when we start out
  - https://en.wikipedia.org/wiki/Cartesian_coordinate_system
