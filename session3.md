@@ -221,12 +221,15 @@ https://mathworld.wolfram.com/Rose.html
 
 # Session 3 Homework
 
-- For homework, I want you to make the most colourful, opulent, dynamic interactive variation of this algorithm you can
 - Here's a slightly more developed version of *Flores geometrici* that uses the mouse to control the formation of the petals
 - https://mimicproject.com/code/a1996d3f-ecf1-75ae-5486-30904042bfcc
 - Notice that this one calculates the spacing around the circle and uses this as a parameter to create harmonics, similar to those we saw in the audio visualisation
-- Use at least two different rose systems to create your design. Consider using a function to generate many copies of the shape in different forms.
-
+- For homework, I want you to make an interactive artwork using this algorithm as a starting point
+- You might want to take Will Gallia's *Adventures in Sine* as an inspiration, or some of the John Whitney work.
+- Don't shy away from using colour
+- Consider drawing other shapes at the different positions, and not just straight lines.
+- Consider using dynamics - can you use the loop parameters (e.g. i) to change the size, shape, colour etc.? 
+- Can you use conditionals to make the output even more interesting and dynamic?
 
   
  
