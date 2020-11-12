@@ -25,10 +25,10 @@
 # NOW THIS !
 
 * This session is designed to reinforce core knowledge of pixels whilst additionally demonstrating under-the-hood examples for carrying out common pixel manipulation tasks. This includes
- * Pixels representations - how pixel information is stored and represented, including colours
- * Pixel manipulation - how we can create both simple and complex shapes and textures using mathematical expressions 
- * Image processing - how we can manipulate existing images by using combinations of loops and conditionals 
- * 2D Image convolution - how we can use a convolution 'kernel' to create a range of image filters
+ - Pixels representations - how pixel information is stored and represented, including colours
+ - Pixel manipulation - how we can create both simple and complex shapes and textures using mathematical expressions 
+ - Image processing - how we can manipulate existing images by using combinations of loops and conditionals 
+ - 2D Image convolution - how we can use a convolution 'kernel' to create a range of image filters
 
 ## Creating Images From Scratch
  - The algorithms we used for creating the polar line drawings are basic geometric 'expressions' 
