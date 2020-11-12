@@ -1,19 +1,31 @@
 # Session 4: Pixel Manipulation and Image Processing
 
+![Mandala Image from Wikimedia commons](https://upload.wikimedia.org/wikipedia/commons/9/9a/Mandala_52.svg)
+
 ## Recap
  - Last session we looked at basic 2D graphics concepts
+ - We looked at simple canvas drawing functions and how we can use them to graph functions
  - We learned about cartesian and polar coordinate systems
  - We also looked at how to convert between polar and cartesian coordinates (super important)
- - We learned how to draw circles from scratch using trigonometry
- - We learned about how the radius of a circle can describe the magnitude of something and also the distance between some things
- - We also thought a little about how this is the same as the hypoteneuse of a right-angled triangle
- - We learned about how the position around a circle is an angle in radians, which we can call Theta, or Phase, depending on what we're thinking about
+ - We learned how to draw circles from scratch using trigonometry, and how this can be used as a basis for understanding how to create different kinds of curves
+ - We learned about how the radius of a circle can describe the magnitude of something and also the distance between things
+ - We also thought a little about how this is the same as calculating the hypoteneuse of a right-angled triangle, and is also the l2Norm / Euclidean Distance 
+ - We looked at how the position around a circle is an angle in radians, which we can call Theta, or Phase, depending on what we're thinking about
  - We then looked at how we can use this knowledge to visualise periodic signals in polar space
- - I then set a task for you to all convert a simple processing sketch that draws interesting polar patterns so that it runs in pure JavaScript
+ - We learned about how early computer graphics pioneers such as John Whitney used these approaches to create the first 2D and 3D computer graphics systems, and how these stylistically related to early abstract cinema, classical geometry, and islamic art.
+ - I then set you all a task to take a more complex variant of this form called *Flores Geometrici*, and use it as a starting point to create your own interactive (or *reactive*) 2D asbtract artwork.
 
 ## First
  - Let's have a look at the work you have done in the last week. 
  - Do you have any questions about the task? What problems did you have?
+
+# Session 4 - Content
+
+* This session is designed to reinforce core knowledge of pixels whilst additionally demonstrating under-the-hood examples for carrying out common pixel manipulation tasks. This includes
+ * Pixels representations - how pixel information is stored and represented, including colours
+ * Pixel manipulation - how we can create both simple and complex shapes and textures using mathematical expressions 
+ * Image processing - how we can manipulate existing images by using combinations of loops and conditionals 
+ * 2D Image convolution - how we can use a convolution 'kernel' to create a range of image filters
 
 ## Creating Images From Scratch
  - The algorithms we used for creating the polar line drawings are basic geometric 'expressions' 
