@@ -12,14 +12,17 @@
  - We also thought a little about how this is the same as calculating the hypoteneuse of a right-angled triangle, and is also the l2Norm / Euclidean Distance 
  - We looked at how the position around a circle is an angle in radians, which we can call Theta, or Phase, depending on what we're thinking about
  - We then looked at how we can use this knowledge to visualise periodic signals in polar space
- - We learned about how early computer graphics pioneers such as John Whitney used these approaches to create the first 2D and 3D computer graphics systems, and how these stylistically related to early abstract cinema, classical geometry, and islamic art.
+ - We learned about how early computer graphics pioneers such as John Whitney used these approaches to create the first 2D and 3D computer graphics systems, and how these stylistically related to early abstract cinema and classical geometry.
  - I then set you all a task to take a more complex variant of this form called *Flores Geometrici*, and use it as a starting point to create your own interactive (or *reactive*) 2D asbtract artwork.
 
 ## First
  - Let's have a look at the work you have done in the last week. 
+ - Break in to groups and discuss each others work. Then we'll come back together and look at some examples :-)
  - Do you have any questions about the task? What problems did you have?
+ - To what extend do the works you created have the appearance of a Mandala? What is a Mandala?
+  - How do these forms reflect on and inflect Hindu, Bhuddist and Islamic art forms?
 
-# Session 4 - Content
+# NOW THIS !
 
 * This session is designed to reinforce core knowledge of pixels whilst additionally demonstrating under-the-hood examples for carrying out common pixel manipulation tasks. This includes
  * Pixels representations - how pixel information is stored and represented, including colours
