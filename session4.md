@@ -48,7 +48,7 @@ imageData.data[position+1] = c%255;
 imageData.data[position+2] = c%255
 imageData.data[position+3] = 255;
 ```
- - The modulo operator is to ensure that the output never goes over 255, which is the maximum colour value
+ - The modulo operator is to ensure that the output never goes over 255, which is the maximum colour value. What other strategies could you use?
  - The 'position' line moves through the Image Data 'array', writing colour channels for each position.
  - It's going to take a while for you to get familiar with this code - BUT YOU NEED TO.
  
@@ -103,15 +103,17 @@ imageData.data[position+3] = 255;
   - What else could we do?
   - Could we invert the threshold? What would this do?
   - How could we increase the brightness?
+  Here's one way : https://mimicproject.com/code/88d46039-0070-4826-6692-ca70d8ac90f8
   - How could we increase the contrast?
+  Here's one way? : https://mimicproject.com/code/85301f88-5d44-8dc3-f4c5-0d329c452122
   - Are there better ways of doing this?
   - Well yes of course. For example, we can generate brightness by interpolating the current pixel value against 0. We could generate contrast by interpolating the current pixel value against gray (which is sort of what we did). Finally, we could create saturation by interpolating the current pixel value against it's own luminance. You can generate luminance very easily with the following formula: 
   `(0.2126*R + 0.7152*G + 0.0722*B)`.
   - Once you have this value for the pixel, you could interpolate a new value by doing something like this:
  `(1 – saturation_value) * pixel_luminance + saturation_value * actual_pixel_value` 
-  - This is extremely similar to what we did when we interpolated new values for changing the speed of audio sample playback. 
+  - This is v. similar to what we did when we interpolated new values for changing the speed of audio sample playback. 
   
- ## Rotating an Image the Hard Way
+ ## Rotating an Image by Hand
   - In most Creative Coding frameworks you can just call 'rotate' to rotate an image.
   - But it's worthwhile taking a look at how this actually works
   - The below example shows how we can use something similar to the circle formula from last week to rotate each pixel to a new location on the screen.
