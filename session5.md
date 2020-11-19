@@ -5,11 +5,12 @@
  - We used expressions to create complex pixel manipulations
  - We also learned about how to do basic image processing
  - We looked at concepts such as convolution for edge detection, bluring, and other effects
- - We also thought about complex space a little, and looked at the mandelbrot set a bit
+ - Some of us also thought about complex space a little, and looked at the mandelbrot set a bit...
 
 ## Homework Review
- - Let's have a look at the work you have done in the last week. 
- - Do you have any questions about the task? What problems did you have?
+ - Let's have a look at the work you have done in the last week
+ - In your groups, discuss what you did. If you created a filter, share it. If you wrote about fractal, share this too.
+ - Come up with some questions we can discuss - What problems did you have? What isn't clear? Help each other!
 
 # Part Two : 3D Graphics Systems From Scratch
 
