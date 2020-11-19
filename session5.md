@@ -18,8 +18,7 @@
 
  or grab the zip here:
 
- https://github.com/micknoise/Advanced-Creative-Coding-1/blob/master/3D%20graphics.zip
- 
+https://github.com/ual-cci/MSc-Coding-1/blob/master/3D%20graphics.zip 
   
 ## HOMEWORK
  - Start from the basic 3D perspective projection that we used.
