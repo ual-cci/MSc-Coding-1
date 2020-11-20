@@ -173,8 +173,9 @@ https://mimicproject.com/code/dcd998f4-9146-8b50-9218-9d09653d2f58
 https://github.com/ual-cci/MSc-Coding-1/blob/master/3D%20graphics.zip 
   
 ## HOMEWORK
- - Start from the basic 3D perspective projection that we used.
- - Create an interactive geometry system using this basic engine.
+ - Start from the basic perspective projection that we used.
+ - Create a geometric sculpture using this basic engine.
+ - Consider using Jamnitzer's Perspectiva as an inspiration.
  - Think about how you can adapt some of the knowledge you have learned in previous sessions
  - Also, consider how you might use distance as a factor.
  
