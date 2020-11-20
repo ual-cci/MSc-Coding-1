@@ -1,6 +1,6 @@
 # Session 5: 3D Graphics From Scratch
 
-## Part One : Recap
+# Part One : Recap
  - Last session we looked at more advanced 2D graphics concepts
  - We used expressions to create complex pixel manipulations
  - We also learned about how to do basic image processing
