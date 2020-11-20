@@ -30,7 +30,7 @@ https://www.youtube.com/watch?v=yMeSw00n3Ac
 - We do this by introducing the idea of a perspective *projection*
 - What this means is, we take 3D coordinates, and we use a simple algorithm to determine 
 
-## 3D Perspective Projection
+## 2D Perspective Projection
 - We're going to talk through the code for a simple perspective projection
 - The starter code for this is here:
 - https://mimicproject.com/code/d2e93d74-8a13-0d7c-6e06-68048f433b4c
