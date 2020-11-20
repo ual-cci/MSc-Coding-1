@@ -1,4 +1,4 @@
-# Session 5: 3D graphics from scratch
+# Session 5: 3D Graphics From Scratch
 
 ## Part One : Recap
  - Last session we looked at more advanced 2D graphics concepts
