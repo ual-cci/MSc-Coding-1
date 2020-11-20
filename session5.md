@@ -21,9 +21,9 @@ This session will take us through how to create a basic 3D graphics engine using
 https://www.youtube.com/watch?v=yMeSw00n3Ac
 
 - This is the very first 3D computer graphics sequence in any major movie.
-- It was produced by the artists Larry Cuba. 
+- It was created by the artist Larry Cuba. 
 - Larry Cuba worked with John Whitney, and is a hugely important figure in experimental cinema *and* computer graphics
-- Shout out to Larry in case he's reading :-) We love you.
+- Shout out to Larry in case he's reading :-) I hope you're doing OK !
 
 ## First Principles
 - In order to draw a 3D scene, we need to create the illusion of depth.
