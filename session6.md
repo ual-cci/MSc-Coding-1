@@ -1,6 +1,8 @@
 # Session 6: 3D graphics part 2
 
-* Making worlds
+# Making Worlds
+
+![Image of an alien planet]()
 
 ---
 
