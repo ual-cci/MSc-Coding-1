@@ -1,38 +1,83 @@
-# Session 6: 3D graphics part 2
+# Session 6: 3D Graphics Part 2
 
 # Making Worlds
 
 ![Image of an alien planet](https://github.com/ual-cci/MSc-Coding-1/blob/master/surface.png)
-
 ---
 
-# So far..
+# Part 1: Review of Last Week's Session
 
-* 3D geometry, vertices, unit vectors, directions, coordinate spaces, 2D perspective projection, matrices / transforms, openGL coordinates, primitives, procedural geometric forms.
+* We learned about 3D geometry, what it is and how it's represented in a computer
+* We learned about vertices - which are vectors with three coordinates - X, Y and Z
+* We also learned about the **unit vector**, how to create it, and why it's useful. We went through an example of calculating the unit vector, and how it represents direction *ONLY*.  
+* We thought about how we can use unit vectors, and the direction information they contain, to calculate the trajectory and velocity of a point in any number of dimensions:
+https://mimicproject.com/code/c2ca838c-7c56-cff9-1e98-5ded7373bc12
+* We thought about GL coordinate spaces, including GL coordinate space, where 0,0,0 is in the centre of the screen by default, with 1 openGL unit in all directions
+* We learned how a 2D perspective projection can be created by generating a value (coefficient) based on the value of the Z coordinate.
+* We also learned how we can use FOV to help generate this coefficient, and how this helps us decide how big things should be, and also how far away from the origin they should be to create a sense of perspective based on how close those things are to us 
+* We used Scale, Translation and Rotation in the right order within our own 3D engines. We also looked at how these are expressed as matrix transformations.
+* We also explored Primitives - which are collections of vertices.
+* Finally we explored the concept of procedural geometry, where we create and manipulate geometric forms on the fly
 
----
+# HOMEWORK REVIEW
+- Break in to groups and discuss the work you've been doing. Come up with questions that might be helpful to explore
+- How could you use a function or a class to allow you to draw more than one object? 
+- How can you draw the geometric forms as connected lines instead of individual points?
 
-# This week
+# Part 2 : Intro to WebGL Basics
 
-* Intro to Three.js
-* Geometry / Models
-* Materials
-* Textures
-* Lighting
-* Triangles
-* Normals
+## This week
 
----
+* This week we will be using a piece of graphics middleware to help us create more complex 3D scenes. It's called Three.js and you can find out more about it here:
+https://threejs.org/
+- Three.js isn't a 'framework', it's a ibrary of functions that speed up the process of getting things done
+- It's optimised for generating 3D scenes using WebGL.
+https://get.webgl.org/
+- WebGL is super important and the core of more or less everything we will do in this course from now on.
+- If you are interested in learning WebGL under the hood, I recommend you look at this resource: It really is everything you need to know all in one place:
+https://webglfundamentals.org/
+- However, that is going to get pretty deep pretty fast, so in the first instance, we're going to use a piece of middleware - middleware is a professional toolkit for producing 
 
-# Programming techniques we will look at
+## What we will learn
+* Geometry / Models - what they are and how to think about them
+* Materials - what makes up a material and how do we use them? 
+* Textures - creating and mapping textures
+* Lighting - creating simple lighting in a 3D scene (without doing the maths by hand)
+* Triangles - the cause of all the trouble
+* Normals - what they are, why you need them, how to create them and use them
+
+## Programming Techniques We Will Look At
 
 * You should now be familiar with variables, conditionals, and loops.
-* Today we will look more at scope
-* We will look at functions in more detail
-* We will also be using objects with specific methods defined by the Three.js API.
+* Today we will be thinking more about scope
+* We will also look at functions in more detail
+* Further, we'll be using objects with specific methods defined by the Three.js API.
 - https://threejs.org/docs/
+- WebGl is a 3D graphics context based on OpenGL
+- It allows you to work on something that is similar to the Fixed Function Pipeline (through the use of APIs like three)
+- It also allows low-level access to the Programmable Pipeline (Shaders)
 
----
+## Mr Doob
+- Mr Doob is a genuinely fascinating character who has contributed huge amounts to the progression and use of WebGL
+- Let's check out their website here:
+https://mrdoob.com/ - this could take some time.
+- Mr Doob is the author of Three.js
+- In general, what makes the library so damn useful, is that it has a very coherent API (Application Programming Interface), which he keeps great control of
+- It also shares approaches that you will find in real-world openGL, so from that point of view, it's definitely worth learning
+- Further to this, it allows you to use aspects of the OpenGL Programmable Pipeline, which is more or less all you can do in WebGL, as if you were using the Fixed Function Pipeline.
+- This is super useful for all sorts of reasons, as it has the effect of maintaining openGL approaches across the web in clear ways. 
+- This is *all because WebGL is an incredibly verbose language - much more so than openGL*. This has been widely criticised and is not a controversial view at all.
+- If you are still wondering who uses raw WebGl, the answer is, not even Greggman, the author of webGlfundamentals.
+- They use TWIGL
+- https://twgljs.org/
+- Twigl is really fantastic, and probably the best way to program low-level WebGL. But it's not low-level WebGl.
+- As Greggman says, "If you want to get stuff done use three.js. If you want to do stuff low-level with WebGL consider using TWGL."
+
+# Three.js examples
+- Let's go here and take a look at some examples. https://threejs.org/
+
+- You can find the github here if you're interested
+https://github.com/mrdoob/three.js/
 
 # A word about Models
 
@@ -102,12 +147,9 @@ var light = new THREE.DirectionalLight("rgb(255,255,255)");
 // There are lots of different kinds of renderers. 
 // They also have a lot of parameters!!
 var renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: true });
-// We also create some camera controls. 
-// These take the mouse info automatically and use it to control the scene.      
-	var controls = new THREE.OrbitControls(camera, renderer.domElement); 
+
 ```
 * The renderer here is slightly different to the one in the other example. What's the difference?
-- Exercise - explore the introductory example and try to create a scene with more than one object. Animate the objects, and try to load different textures.
 
 ---
 
@@ -170,8 +212,8 @@ var renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: true });
 
 * You don’t need to use the triangle rendering method
 * But it is the hardest one to get your head round.
-* Quad Strip is very handy (more on this in a moment)
-* Polygons are also great.
+* Quad Strip is very handy
+* Polygons are also great
 * Now you know how to organise points in a mesh to draw faces, you have a lot of skill.
 * Most graphics programmers find this very hard :-)
 
@@ -259,6 +301,9 @@ var renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: true });
 
 ![triangles image](https://ual-cci.github.io/mick/images/11.jpg)
 
+- Let's return to our example code and check out the normals
+https://mimicproject.com/code/cbba9b28-522f-089b-25c0-a23cde718b6b
+
 ---
 
 # Bump Maps
@@ -319,9 +364,11 @@ var renderer = new THREE.WebGLRenderer({ preserveDrawingBuffer: true });
 
 ---
 
-# TASK
+# HOMEWORK
 
-* Build a 3D world with a surface, a sky, and some foreground objects
+* First, explore the introductory example and try to create a scene with more than one object. Animate the objects, and try to load different textures.
+https://mimicproject.com/code/e252c3e4-ef71-774b-a9a0-870d8df20c0d
+* Now, build a 3D world with a surface, a sky, and some foreground objects
 * You can use built in primitives.
 * Don't forget to use textures.
 * Use the example as a starting point.
