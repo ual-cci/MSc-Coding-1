@@ -36,7 +36,7 @@ https://get.webgl.org/
 - WebGL is super important and the core of more or less everything we will do in this course from now on.
 - If you are interested in learning WebGL under the hood, I recommend you look at this resource: It really is everything you need to know all in one place:
 https://webglfundamentals.org/
-- However, that is going to get pretty deep pretty fast, so in the first instance, we're going to use a piece of middleware - middleware is a professional toolkit for producing 
+- However, that is going to get pretty deep pretty fast, so in the first instance, we're going to use a piece of middleware - middleware is a professional toolkit for developing something - in this case, 3D graphics scenes.
 
 ## What we will learn
 * Geometry / Models - what they are and how to think about them
