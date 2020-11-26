@@ -2,7 +2,7 @@
 
 # Making Worlds
 
-![Image of an alien planet]()
+![Image of an alien planet](https://github.com/ual-cci/MSc-Coding-1/blob/master/surface.png)
 
 ---
 
