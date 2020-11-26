@@ -73,13 +73,15 @@ https://mrdoob.com/ - this could take some time.
 - Twigl is really fantastic, and probably the best way to program low-level WebGL. But it's not low-level WebGl.
 - As Greggman says, "If you want to get stuff done use three.js. If you want to do stuff low-level with WebGL consider using TWGL."
 
-# Three.js examples
+## Three.js examples
 - Let's go here and take a look at some examples. https://threejs.org/
 
 - You can find the github here if you're interested
 https://github.com/mrdoob/three.js/
 
-# A word about Models
+# Part 3 : Lecture
+
+## Intro: A word about Models
 
 * In many cases, specifically where common forms of representation are being used (human characters for example), models are prepared outside of the rendering engine, then imported.
 * In these cases, models are often groups of meshes, rather than one mesh. They may also have animations associated with them.
@@ -88,18 +90,10 @@ https://github.com/mrdoob/three.js/
 * You can have lots of children - e.g. lots of body parts.
 * So you can think of models as groups of nodes organised in a hierarchy.
 
----
-
-# A word about Models
-
 * A model can also have all the features we are discussion today, baked in to the model for when you load it in the engine.
 * These features include parameters that say how they will react to lighting such as materials,  normals), bump maps, and textures etc.
 * They will also have specific information about how the model can be deformed.
 * The entire package is a Resource.
-
----
-
-# A word about Models
 
 * We're going to be using basic geometry with Three.js
 * But there's nothing stopping you from using models if you want.
@@ -108,7 +102,7 @@ https://github.com/mrdoob/three.js/
 
 ---
 
-# Intro to Three.js
+# Introduction to using Three.js
 
 * Let's look at our basic Three.js example in detail.
 * You can find it here:
