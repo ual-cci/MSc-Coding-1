@@ -94,6 +94,10 @@ You should notice that the square functions create squares, not rectangles.
 
 * Create a new called rectangle that lets you specify the length of the sides independently.
 
+If you are stuck, take a look at this:
+
+https://mimicproject.com/code/1c83ae88-4117-38f8-216e-5a825f168314
+
 Now try to create a simple picture with lots of rectangles, squares or circles of different colours. Remember you can add, subtract or multiply the outputs of functions. Make notes about the kinds of effects this can have.
 
 * If you are feeling brave, use a mat2 matrix to skew the sides of the square, or to rotate it. You can copy the rotation matrix from this code:
