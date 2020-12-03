@@ -86,7 +86,7 @@ Next, we need to look at the following presentation:
 
 Go to the following document and fork it:
 
-https://mimicproject.com/code/ba6a2bbd-dd43-e661-da51-ec36fccbc0d3
+https://mimicproject.com/code/86087fdf-04c8-61e1-f1b2-dc94711f968d
 
 Here you can see a series of functions for creating squares and circles (Remember we're just working on the fragshader code)
 
