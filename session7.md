@@ -93,10 +93,10 @@ void main(){
 ```
 
 - What is apparent is that you can do much more complex things with far less code.
-- Also, none of this code is writing in to an array - there's not a single array in site
+- Also, none of this code is writing in to an array - there's not a single array in sight (although there are some vectors).
 - This is because we're not accessing a pixel buffer at all
 - In the lecture, I'm going to take you through the magic of how this works
-- But before I do:
+- But before I do, let's think about the creative communities that exist around GLSL :
 
 ## GLSL Communities
 
