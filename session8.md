@@ -21,7 +21,7 @@ https://mimicproject.com/code/0d649cb7-0cca-a70a-86b2-f3e087402d12
 
 Grab the PDF presentation here:
 
-- https://github.com/micknoise/Advanced-Creative-Coding-1/blob/master/Session-8.pdf
+- https://github.com/ual-cci/MSc-Coding-1/blob/master/Session-8.pdf
 
 ---
 
