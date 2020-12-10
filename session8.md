@@ -1,6 +1,5 @@
 # Session 8: GLSL Shaders Part 2
 
-## Introduction to GLSL using Fragment Shaders
 
 ---
 ## GLSL shaders continued
@@ -17,14 +16,39 @@ https://mimicproject.com/code/0d649cb7-0cca-a70a-86b2-f3e087402d12
 
 ---
 
-# Presentation:
+# Part 1 - Recap and Homework Review
+
+## Last Week's Session!
+
+- Last week we learned about Fragment Shaders
+- We learned that we can create Fragment shaders with GLSL
+- We learned that GLSL is a great language with lots of amazing built in functions 
+https://www.shaderific.com/
+- We also learned that we have to think about everything differently because every fragment is rendered simultaneously
+- We learned that GLSL is basically just like C - you can use C-like expressions, constructs etc., but it's much more powerful
+- We learned that shaders are used to do High Performance Computing (HPC), for example, Machine Learning and AI, and other types of compute operations.
+- We learned that gl_FragCoord and gl_FragColour are built in variables that we need to have in our fragment shader program
+- We learned about Uniforms - what they are, how they work, how to set them up, and how to pass them between our main program and our shaders
+- We created shapes of different kinds using algorithms and expressions, and also learned how to create lines. This was a bit weird for all sorts of reasons but also really cool.
+
+- Finally we all made some creative work in a fragment shader using line functions and (possibly) shape functions.
+
+## Homework review
+- Let's share our stuff!!!
+
+# Part 2 : Pseudorandom numbers in fragment shaders
+
+- We'll be doing the first section (on pseudorandom functions) in class
+- This stuff is pretty easy as we've already talked about most of it before
+- But the context might make it seem more difficult - but don't worry, it isn't
+
+# Part 3: Presentation:
 
 Grab the PDF presentation here:
 
 - https://github.com/ual-cci/MSc-Coding-1/blob/master/Session-8.pdf
 
-- We'll be doing the first section (on pseudorandom functions) in class
-- We'll be doing the second section (on vertex shaders and normals for procedural/dynamic geometry) in the lecture
+- We'll be doing the second section (on vertex shaders and normals for procedural/dynamic geometry) in the video lecture
 - You can do all the excerises as homework. They are not as hard as they first appear. Any questions, please feel free to message me.
 - You should set aside 3-4 hours minimum to go through the exercises below after watching the lecture. Refer to your notes from the in-class talk, review the blackboard session, and use the lecture as your main resources. Everything you need to know is there :-)
 
