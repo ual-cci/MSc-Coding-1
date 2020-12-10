@@ -176,7 +176,7 @@ https://mimicproject.com/code/3c30839f-92e0-8443-3cd9-1a91e8ef2b5f
 
 Next, we need to look at the following presentation:
 
-- https://github.com/ual-cci/MSc-Coding-1/blob/master/Session-7-part2.pdf
+- https://github.com/ual-cci/MSc-Coding-1/blob/master/session7-part2.pdf
 
 ---
 
