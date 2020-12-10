@@ -17,13 +17,20 @@ https://mimicproject.com/code/0d649cb7-0cca-a70a-86b2-f3e087402d12
 
 ---
 
-## Presentation:
+# Presentation:
 
 Grab the PDF presentation here:
 
 - https://github.com/ual-cci/MSc-Coding-1/blob/master/Session-8.pdf
 
+- We'll be doing the first section (on pseudorandom functions) in class
+- We'll be doing the second section (on vertex shaders and normals for procedural/dynamic geometry) in the lecture
+- You can do all the excerises as homework. They are not as hard as they first appear. Any questions, please feel free to message me.
+- You should set aside 3-4 hours minimum to go through the exercises below after watching the lecture. Refer to your notes from the in-class talk, review the blackboard session, and use the lecture as your main resources. Everything you need to know is there :-)
+
 ---
+
+# FINAL HOMEWORK !!!
 
 ## Exercise 1
 
@@ -35,9 +42,9 @@ https://mimicproject.com/code/b127c4fb-e76f-76e1-09ab-18973a61eedd
 
 Locate the randfm function.
 
-Find where the function is called. Alter the frequency and amplitude. What happens to the patterns at high amplitude?
+Find where the function is called. Alter the frequency and amplitude. What happens to the patterns at high amplitude? Write a short paragraph describing your observations.
 
-Can you work out why this is happening?
+Can you work out why this is happening? Try to reason about the process and write it down. 
 
 ---
 
@@ -49,21 +56,28 @@ https://mimicproject.com/code/15f43bb8-fecb-1c9e-a47c-8141944f4190
 
 What are the main differences between this rand function, and the one in the previous document?
 
-Try to figure out what the dot product is doing.
+What it the dot product operation doing? Why is the outcome so different to that in the first exercise? Consider how many outputs and inputs there are. Does this make a difference?
 
-Alter the rand function so that it has frequency and amplitude arguments, like in the first example. Now change these values and study their effects.
+Alter the rand function to make sure it has frequency and amplitude arguments, similar to the first example. Now change these values and study their effects.
 
 ---
 
+### The next few examples all use the random functions above in one way or another in order to modify the vertex buffer. When this happens, we need to update the normals, otherwise we can't light the shader properly. These exercises are designed to help you understand how to make sure you can do this properly. 
+
+
 ## Exercise 3
+
+In the example below, we have shaded a geometry using a light, exactly as I describe in the lecture.
 
 https://mimicproject.com/code/3ef97bc0-86b7-cced-40b7-3210a62a5475
 
-Set it up so that you can rotate the lighting.
+Fork the document and make changes so that you can rotate the lighting.
 
-Look at how the vertex shader is setting the normal.
+Look at how the vertex shader is setting the value of the normal.
 
-Try to generate a random value and add it to the normal
+Make a note of all the steps required to pass this value to the Fragment shader.
+
+Try to generate a random value and add it to the normal - what is another name for this process?
 
 Now look at this document
 
@@ -77,7 +91,11 @@ What's going on? Can you rotate the sphere whilst retaining the lighting charact
 
 https://mimicproject.com/code/4f968419-a78e-b4d4-bcc5-2722918b25ed
 
-Notice that we are now using the perspective camera.
+Notice that we are now using the perspective camera and a projection matrix (which is built in). These do the same things that we explored manually in Session 5.
+
+The next step is to understand how to use matrix operations in the vertex shader. This exercise will help with that.
+
+There are two main tasks :
 
 a) Rescale the object using the scale matrix
 
@@ -89,17 +107,15 @@ b) Create a Rotation in a different axis - make sure your normals update
 
 https://mimicproject.com/code/f1c2157e-b6d5-52d7-e0fa-b554826d03d2
 
-Create a translation so that the ground plane is on the ground.
+This is a simple ground plane and it's not very good at all. The random number generator is being used to create terrain, but the terrain is not very varied or interesting. Your job is to make the terrain look better.
 
-Consider how this affects the lighting - you might need to move the light..
+a) Create a translation so that the ground plane is on the ground - it's currently in the air!
 
----
+b) Modify the terrain generator function (the random function) to make more interesting terrain. This is a bit like adding waves together over time + space... 
 
-## Exercise 6
+To help you with this, take a look at the below algorithms...
 
 Fractal noise (value / Perlin noise)
-
-Try to apply one of the below fractal noise examples to the ground plane in 2)
 
 https://mimicproject.com/code/01ca616c-3d47-ed3d-4082-18ecf7953ffe
 
@@ -107,4 +123,8 @@ Mandelbrot Shader
 
 https://mimicproject.com/code/19644e9b-37e3-20de-6c9a-4bc3a5b47fd2
 
-b) Try to combine the ground plane with a second mesh object. Use the earlier MIMIC document as a guide.
+Consider how this affects the lighting - you might need to move the light. You might also need more lights. Can you do this?
+
+Then, finally ....
+
+c) Try to combine the ground plane with a second mesh object. If you can do this, congratulations you can more or less do anything...
