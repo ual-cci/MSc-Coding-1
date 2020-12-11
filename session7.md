@@ -116,7 +116,8 @@ void main(){
 - Before we launch in to the lecture, let's look at a basic GLSL setup.
 https://mimicproject.com/code/e2fb6d1d-e5f8-a950-5119-b47535a82752
 
-
+You might also find this resource helpful
+https://thebookofshaders.com/
 
 # Part 3 : Lecture Part One
 
