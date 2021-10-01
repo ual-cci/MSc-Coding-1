@@ -47,9 +47,7 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Modifying and lighting Geometry
  - Programming knowledge - GLSL concepts, variables and structure, contemporary graphics pipeline
 
-
-
-## Final week - Assessment
+## Final two weeks - Assessment
 
 For this course, assessment is through practical project and weekly homework projects. Everything is due during the last week of term, which means you will need to be focussing on your project during the last couple of weeks.
 
