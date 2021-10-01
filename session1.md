@@ -123,6 +123,10 @@ Or if you want to use the visualisation, use this one.
 
 https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
 
+Or one of the examples frmo this page, which are a bit more fully featured :-)
+
+https://mimicproject.com/guides/maximJS
+
 Use either as a basis for carrying out the following tasks:
 
 - Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed.
@@ -132,6 +136,6 @@ Use either as a basis for carrying out the following tasks:
 - Make the sound texture vary continuously over a period of 1 minute through the use of low-frequency oscillators, so that the sound texture develops over the entire period.
 
 Further reading:
-- Follow Chris Kiefer's tutorial on the Mimic platform: https://mimicproject.com/guides/maximJS
+- Follow Chris Kiefer and Louis McCallum's tutorial on the Mimic platform: https://mimicproject.com/guides/maximJS
 - Read this useful article from izotope on bit resolution and sampling rate
 -- https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
