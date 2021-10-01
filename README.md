@@ -58,6 +58,8 @@ For this course, assessment is through practical project and weekly homework pro
 - Then extend this to moving images
   - John Whitney approach
   - <https://www.youtube.com/watch?v=5eMSPtm6u5Y>
+  - Clarence 'Skip' Ellis - the Operational Transform
+  - https://www.redhat.com/en/command-line-heroes/season-6/clarence-ellis
 
 ## How we will learn
 
