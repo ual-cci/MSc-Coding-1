@@ -77,10 +77,10 @@ For this course, assessment is through practical project and weekly homework pro
  - I'd recommend you do this before diving in to something like p5.
 
 - www.mimicproject.com _REQUIRES CHROME_
-  - Start here for week 1 (using maximilian)
-  - https://mimicproject.com/guides/maximJS
   - You should also look at the MIMIC guide:
   - https://mimicproject.com/getting-started/beginner
+  - Start here for week 1 (using maximilian)
+  - https://mimicproject.com/guides/maximJS
   - For hot takes on JavaScript, go here and drink it in :-)
   - https://www.w3schools.com/js/default.asp
   - And for ES6, which we will also be using:
