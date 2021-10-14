@@ -2,7 +2,7 @@
 
 ![Still taken from Will Gallia's 'Fourier](https://willga.llia.io/fourier/a_img2_hude4e6bbe1bfdfd5345f27f9abf219e2d_40558_900x900_fit_q75_box.jpg)
 
-Still Taken from Will Gallia's "Fourier In Sine", https://willga.llia.io/fourier/
+Still Taken from Will Gallia's "Fourier", https://willga.llia.io/fourier/
 
 ## Introduction
  - This session is about 2D graphics
