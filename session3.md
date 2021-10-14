@@ -1,8 +1,8 @@
 # Session 3: 2D Graphics Part One: Graphs, Shapes and Coordinates
 
-![Still taken from Will Gallia's 'Adventures in Sine](http://www.wgallia.com/content/images/ais/sine1.jpg)
+![Still taken from Will Gallia's 'Fourier](https://willga.llia.io/fourier/a_img2_hude4e6bbe1bfdfd5345f27f9abf219e2d_40558_900x900_fit_q75_box.jpg)
 
-Still Taken from Will Gallia's "Adventures In Sine", http://www.wgallia.com/content/images/ais/
+Still Taken from Will Gallia's "Fourier In Sine", https://willga.llia.io/fourier/
 
 ## Introduction
  - This session is about 2D graphics
