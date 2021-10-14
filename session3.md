@@ -36,7 +36,7 @@ Still Taken from Will Gallia's "Fourier", https://willga.llia.io/fourier/
 ## Loading and Controlling Samples
 - We used maxiSample to load and play back samples
 - We used oscillators to modulate the playback speed of samples
-- We also explored how you can play back samples in reverse by running through the list of numbers backwards (interpolating in reverse as we go!)
+- We also explored how you can theoretically play back samples in reverse by running through the list of numbers backwards.
 
 ## Triggering Precise Events Using maxiClock
 - We learned that we can use oscillators to create simple, sample accurate clock mechanisms
