@@ -21,7 +21,7 @@
  - Let's have a look at the work you have done in the last week. 
  - Break in to groups and discuss each others work. Then we'll come back together and look at some examples :-)
  - Do you have any questions about the task? What problems did you have?
- - To what extend do the works you created have the appearance of a Mandala? What is a Mandala?
+ - To what extent do the works you created have the appearance of a Mandala? What is a Mandala? 
   - How do these forms reflect on and inflect Hindu, Bhuddist and Islamic art forms?
 
 # Part Two : Using Expressions to Fill Space
