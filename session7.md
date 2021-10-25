@@ -191,7 +191,7 @@ Here you can see a series of functions for creating squares and circles (Remembe
 
 You should notice that the square functions create squares, not rectangles.
 
-1. Create a new called rectangle function that lets you specify the length of the sides independently.
+1. Create a new function called "rectangle function" or similar that lets you specify the length of the sides of the rectangle independently.
 
 If you are stuck, take a look at this:
 
