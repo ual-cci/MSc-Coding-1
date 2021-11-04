@@ -12,7 +12,7 @@
 * We also learned about the **unit vector**, how to create it, and why it's useful. We went through an example of calculating the unit vector, and how it represents direction *ONLY*.  
 * We thought about how we can use unit vectors, and the direction information they contain, to calculate the trajectory and velocity of a point in any number of dimensions:
 https://mimicproject.com/code/c2ca838c-7c56-cff9-1e98-5ded7373bc12
-* We thought about GL coordinate spaces, where 0,0,0 is in the centre of the screen by default, with 1 openGL unit in all directions
+* We thought about GL coordinate spaces, where 0,0,0 is in the centre of the screen by default, with 1 openGL unit in all directions being roughly visible by the camera ny default.
 * We learned how a 2D perspective projection can be created by generating a value (coefficient) based on the value of the Z coordinate.
 * We also learned how we can use FOV to help generate this coefficient, and how this helps us decide how big things should be, and also how far away from the origin they should be to create a sense of perspective based on how close those things are to us 
 * We used Scale, Translation and Rotation in the right order within our own 3D engines. We also looked at how these are expressed as matrix transformations.
