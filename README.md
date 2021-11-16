@@ -1,6 +1,6 @@
 # Coding One: Advanced Creative Coding
 
-Professor Mick Grierson
+Professor Mick Stuart Grierson
 
 ## Introduction
 
