@@ -28,8 +28,10 @@ The schedule is a journey through different dimensions. We start in 1D, then pro
  - Creating 2D patterns with polar coordinates and loops
 Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Programming knowledge - intermediate structure,  more arrays, more conditionals, for loops, polar coordinates, 2D vectors
+ 
+## Recap and revision - Week 5
 
-## 3D graphics - Week 5 and 6
+## 3D graphics - Week 6 and 7
 
  - Creating a 3D engine from scratch
  - Creating 3D geometry from scratch
@@ -38,7 +40,7 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Programming knowledge - 3D vectors, creating perspective, using matrices for transformations
 
 
-## Shaders - Week 7 and 8
+## Shaders - Week 8 and 9
 
  - Fragments shaders
  - Creating basic shapes, lines and noise
@@ -47,9 +49,9 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Modifying and lighting Geometry
  - Programming knowledge - GLSL concepts, variables and structure, contemporary graphics pipeline
 
-## Final two weeks - Assessment
+## Assessment
 
-For this course, assessment is through practical project and weekly homework projects. Everything is due during the last week of term, which means you will need to be focussing on your project during the last couple of weeks.
+For this course, assessment is through practical project and weekly homework projects. Briefs and Dates for assignments will be added to the moodle page by the CCI Admin team during this term.
 
 ## How we will learn
 
@@ -78,7 +80,7 @@ For this course, assessment is through practical project and weekly homework pro
  - https://github.com/ual-cci/Creative-JavaScript-Crash-Course
  - I'd recommend you do this before diving in to something like p5.
 
-- www.mimicproject.com _REQUIRES CHROME_
+- www.mimicproject.com _WORKS BEST IN CHROME_, although Firefox should work well too these days.
   - You should also look at the MIMIC guide:
   - https://mimicproject.com/getting-started/beginner
   - Start here for week 1 (using maximilian)
