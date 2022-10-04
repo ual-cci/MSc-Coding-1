@@ -115,19 +115,20 @@ Make sure you're familiar with how the MIMIC platform works.
 
 Make sure you have created an account on the MIMIC platform.
 
-Make a fork of this document if you want the simplest possible starting example :
+For the easiest way of completing the homework, use the guide available here:
 
-https://mimicproject.com/code/8e5728dd-2eb9-02a9-9cb8-63d3731bba68
-
-Or if you want to use the visualisation, use this one.
-
-https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
-
-Or one of the examples frmo this page, which are a bit more fully featured :-)
+Or one of the examples from this page, which are a bit more fully featured :-)
 
 https://mimicproject.com/guides/maximJS
 
-Use either as a basis for carrying out the following tasks:
+This not only provides you with working starter code, but also gives you lots of information on the tasks for this week *and* next week
+
+If you would instead like to see the document from the lecture, it's available here but be warned it's not actually as easy to use as the above guide and some of the setup code is not compatible with all browsers (unlike the guide linked above). *Don't use it for the homework*.
+
+https://mimicproject.com/code/69704316-d8d8-7623-f0c6-316cb983f0b9
+
+
+Carry out the following tasks using the *starter example from the maximJS guide*.
 
 - Using at least 4 oscillators, create a continuous, drone-based sound texture or sound bed.
 
@@ -136,6 +137,6 @@ Use either as a basis for carrying out the following tasks:
 - Make the sound texture vary continuously over a period of 1 minute through the use of low-frequency oscillators, so that the sound texture develops over the entire period.
 
 Further reading:
-- Follow Chris Kiefer and Louis McCallum's tutorial on the Mimic platform: https://mimicproject.com/guides/maximJS
+- Follow the rest of the tutorial here: https://mimicproject.com/guides/maximJS
 - Read this useful article from izotope on bit resolution and sampling rate
 -- https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
