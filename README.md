@@ -40,7 +40,7 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Programming knowledge - 3D vectors, creating perspective, using matrices for transformations
 
 
-## Shaders - Week 8 and 9
+## Shaders - Week 8 
 
  - Fragments shaders
  - Creating basic shapes, lines and noise
@@ -49,7 +49,9 @@ Using other algorithms for generating patterns (fractals, packing systems etc.)
  - Modifying and lighting Geometry
  - Programming knowledge - GLSL concepts, variables and structure, contemporary graphics pipeline
 
-## Assessment
+## Assessment - Week 9
+
+ - Students work on their materials for submission 
 
 For this course, assessment is through practical project and weekly homework projects. Briefs and Dates for assignments will be added to the moodle page by the CCI Admin team during this term.
 
