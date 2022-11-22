@@ -4,6 +4,8 @@
 ---
 ## GLSL shaders continued
 
+NOTE: This session is deprecated but may be useful for those who are interested in understanding more about GLSL shaders, specifically how to control lighting under the hood
+
 Today we will be looking at noise generators for a little bit.
 
 Then we will be looking at Vertex shaders in detail.
