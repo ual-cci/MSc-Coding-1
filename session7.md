@@ -1,4 +1,4 @@
-# Session 7: GLSL Shaders Part 1
+# Session 8: GLSL Shaders Part 1
 
 # Introduction to GLSL using Fragment Shaders
 
