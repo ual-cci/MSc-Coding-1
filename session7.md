@@ -135,7 +135,7 @@ Grab the PDF presentation here:
 
 * Go to the following document and fork it:
 
-https://mimicproject.com/code/e2fb6d1d-e5f8-a950-5119-b47535a82752
+https://mimicproject.com/code/62789edb-8cf2-e81b-4962-f129bb2268ab
 
 This page has lots of code on it. The majority of it is management code to set up the shaders. You can ignore this for now.
 
