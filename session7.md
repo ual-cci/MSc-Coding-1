@@ -114,7 +114,7 @@ void main(){
 
 ## Getting started with GLSL
 - Before we launch in to the lecture, let's look at a basic GLSL setup.
-https://mimicproject.com/code/e2fb6d1d-e5f8-a950-5119-b47535a82752
+https://mimicproject.com/code/62789edb-8cf2-e81b-4962-f129bb2268ab
 
 You might also find this resource helpful
 https://thebookofshaders.com/
